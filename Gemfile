@@ -7,6 +7,7 @@ gem 'active_interaction'
 gem 'unicorn'
 
 group :test, :development do
+  gem 'shoulda-matchers', '2.8.0'
   gem 'pry'
   gem 'awesome_print'
   gem 'rspec-rails'

@@ -12,3 +12,7 @@ default: &default
 development:
   <<: *default
   database: portfolio_api_deployment
+
+test:
+  <<: *default
+  database: portfolio_api_test

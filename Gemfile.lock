@@ -125,6 +125,8 @@ GEM
       rspec-mocks (~> 3.4.0)
       rspec-support (~> 3.4.0)
     rspec-support (3.4.1)
+    shoulda-matchers (2.8.0)
+      activesupport (>= 3.0.0)
     slop (3.6.0)
     sprockets (3.5.2)
       concurrent-ruby (~> 1.0)
@@ -155,6 +157,7 @@ DEPENDENCIES
   pry
   rails (= 4.2.5)
   rspec-rails
+  shoulda-matchers (= 2.8.0)
   smarf_doc!
   unicorn
 
