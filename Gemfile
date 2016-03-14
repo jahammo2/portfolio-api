@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.2.5'
 gem 'pg'
-gem 'devise'
+gem 'devise_token_auth'
 gem 'active_interaction'
 gem 'unicorn'
 gem 'carrierwave'

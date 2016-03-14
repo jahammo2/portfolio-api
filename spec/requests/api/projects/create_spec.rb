@@ -7,6 +7,16 @@ describe "Project endpoints" do
     context "with the proper auth headers/tokens" do
       it "returns a 200" do
         authenticated_post "/api/projects", admin, params
+
+        expect(response.status).to eq(200)
+      end
+    end
+
+    context "without proper auth headers/tokens" do
+      it "returns a 401" do
+        authenticated_post "/api/projects", nil, params
+
+        expect(response.status).to eq(401)
       end
     end
 
