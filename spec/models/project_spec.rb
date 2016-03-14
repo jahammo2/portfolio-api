@@ -11,8 +11,7 @@ RSpec.describe Project, type: :model do
   it { is_expected.to validate_presence_of(:title) }
 
   #### Associations ####
-  # it { is_expected.to have_many(:languages) }
-  # it { is_expected.to have_many(:carousel_images) }
-  # it { is_expected.to have_many(:devices) }
-  # it { is_expected.to have_many(:screenshots).through(:devices) }
+  it { is_expected.to have_and_belong_to_many(:languages) }
+  it { is_expected.to have_and_belong_to_many(:devices) }
+  it { is_expected.to have_many(:colors) }
 end
