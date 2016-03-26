@@ -17,3 +17,6 @@ group :test, :development do
   gem 'database_cleaner'
   gem 'faker'
 end
+
+# TODO
+# Add Robocop
