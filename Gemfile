@@ -6,6 +6,7 @@ gem 'devise_token_auth'
 gem 'active_interaction'
 gem 'unicorn'
 gem 'carrierwave'
+gem 'rake', '10.4.2'
 
 group :test, :development do
   gem 'shoulda-matchers', '2.8.0'
@@ -15,5 +16,4 @@ group :test, :development do
   gem 'factory_girl_rails'
   gem 'database_cleaner'
   gem 'faker'
-  gem 'smarf_doc', github: 'RickCarlino/smarf_doc'
 end
