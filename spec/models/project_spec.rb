@@ -13,5 +13,5 @@ RSpec.describe Project, type: :model do
   #### Associations ####
   it { is_expected.to have_and_belong_to_many(:languages) }
   it { is_expected.to have_and_belong_to_many(:devices) }
-  it { is_expected.to have_many(:colors) }
+  it { is_expected.to have_one(:color_set) }
 end

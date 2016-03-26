@@ -17,3 +17,6 @@ group :test, :development do
   gem 'faker'
   gem 'smarf_doc', github: 'RickCarlino/smarf_doc'
 end
+
+# TODO
+# Add Robocop

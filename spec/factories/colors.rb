@@ -1,5 +1,5 @@
 FactoryGirl.define do
-  factory :color do
+  factory :color_set do
     background "MyString"
     button "MyString"
     circle "MyString"
