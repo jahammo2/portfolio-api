@@ -10,6 +10,8 @@ class Project < ActiveRecord::Base
   validates :title, presence: true
   validate :date_deployed_in_past
 
+  accepts_nested_attributes_for :color_set, :languages, :devices
+
   private
 
   def date_deployed_in_past

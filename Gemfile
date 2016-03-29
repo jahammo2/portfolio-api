@@ -6,6 +6,7 @@ gem 'devise_token_auth'
 gem 'active_interaction'
 gem 'unicorn'
 gem 'carrierwave'
+gem 'jsonapi-serializers'
 gem 'rake', '10.4.2'
 
 group :test, :development do

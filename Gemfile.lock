@@ -73,6 +73,8 @@ GEM
       activesupport (>= 4.1.0)
     i18n (0.7.0)
     json (1.8.3)
+    jsonapi-serializers (0.6.5)
+      activesupport
     kgio (2.10.0)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
@@ -172,6 +174,7 @@ DEPENDENCIES
   devise_token_auth
   factory_girl_rails
   faker
+  jsonapi-serializers
   pg
   pry
   rails (= 4.2.5)
