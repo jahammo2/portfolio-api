@@ -61,6 +61,7 @@ describe "Project endpoints" do
       subject { authenticated_post "/api/projects", admin, valid_params }
 
       it "returns a 200" do
+        SmarfDoc.skip
         subject
 
         expect(response.status).to eq(200)
@@ -132,8 +133,9 @@ describe "Project endpoints" do
           }
         )
       end
-      
+
       it "returns the included data" do
+        SmarfDoc.skip
         subject
 
         color_set = project_params[:relationships][:color_set][:data]
@@ -201,16 +203,86 @@ describe "Project endpoints" do
       let (:invalid_params) {
         {
           data: {
+            type: "projects",
+            attributes: {}
           }
         }
       }
-
-      subject { authenticated_post "/api/projects", admin, invalid_params }
+      let (:params_without_title) {
+        {
+          data: {
+            type: "projects",
+            attributes: {
+              github_page_url: Faker::Internet.url,
+              web_page_url: Faker::Internet.url,
+              title: Faker::Hacker.adjective,
+              description: Faker::Hacker.say_something_smart,
+              body: Faker::Lorem.paragraph,
+              date_deployed: Faker::Date.backward(60)
+            },
+            relationships: {
+              color_set: {
+                data: {
+                  background: Faker::Color.hex_color,
+                  button: Faker::Color.color_name,
+                  circle: Faker::Color.hex_color
+                }
+              },
+              languages: {
+                data: [
+                  {
+                    # here
+                    title: nil
+                  },
+                  {
+                    title: Faker::Hacker.noun
+                  }
+                ]
+              },
+              devices: {
+                data: [
+                  {
+                    title: Faker::Hacker.noun
+                  },
+                  {
+                    title: Faker::Hacker.noun
+                  }
+                ]
+              },
+            }
+          },
+        }
+      }
 
       it "returns a 422 if there are no params" do
-        subject 
+        authenticated_post "/api/projects", admin, invalid_params
 
         expect(response.status).to eq(422)
+        expect(response_json).to include(
+          "errors" => [
+            {
+              "status" => "422",
+              "title" => "Validation Failed",
+              "detail" => "Params do not contain data for color_set, languages, or devices"
+            }
+          ]
+        )
+      end
+
+      it "returns a 422 if one param is invalid at the model level" do
+        SmarfDoc.skip
+        authenticated_post "/api/projects", admin, params_without_title
+
+        expect(response.status).to eq(422)
+        expect(response_json).to include(
+          "errors" => [
+            {
+              "status" => "422",
+              "title" => "Validation Failed",
+              "detail" => "Base Languages title can't be blank"
+            }
+          ]
+        )
       end
     end
   end

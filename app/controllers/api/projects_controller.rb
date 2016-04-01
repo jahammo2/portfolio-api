@@ -1,4 +1,6 @@
 class Api::ProjectsController < Api::ApiController
+  before_action :validate_params_exist!, only: [:create]
+
   def create
     outcome = ProjectService::Create.run(create_inputs)
     included = ['color_set', 'languages', 'devices']
@@ -9,11 +11,11 @@ class Api::ProjectsController < Api::ApiController
   def project_params
     params.require(:data).permit(
       attributes: [
-        :github_page_url, 
-        :web_page_url, 
-        :title, 
-        :description, 
-        :body, 
+        :github_page_url,
+        :web_page_url,
+        :title,
+        :description,
+        :body,
         :date_deployed
       ],
       relationships: [
@@ -40,5 +42,19 @@ class Api::ProjectsController < Api::ApiController
       languages: project_params[:relationships][:languages][:data],
       devices: project_params[:relationships][:devices][:data],
     })
+  end
+
+  def validate_params_exist!
+    errors = [{
+      "status" => "422",
+      "title" => "Validation Failed",
+      "detail" => "Params do not contain data for color_set, languages, or devices"
+    }]
+
+    begin
+      create_inputs
+    rescue NoMethodError
+      render_failure_json(422, errors)
+    end
   end
 end
