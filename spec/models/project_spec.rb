@@ -15,5 +15,6 @@ RSpec.describe Project, type: :model do
   it { is_expected.to have_and_belong_to_many(:devices) }
   it { is_expected.to have_one(:color_set) }
   it { is_expected.to accept_nested_attributes_for(:languages) }
-  it { is_expected.to accept_nested_attributes_for(:sd) }
+  it { is_expected.to accept_nested_attributes_for(:devices) }
+  it { is_expected.to accept_nested_attributes_for(:color_set) }
 end
