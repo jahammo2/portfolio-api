@@ -1,5 +1,5 @@
 class Api::ApiController < ApplicationController
-  before_action :authenticate_admin!
+  before_action :authenticate_admin!, only: [:create]
 
   def authenticate_admin!
     unless current_admin
@@ -15,17 +15,17 @@ class Api::ApiController < ApplicationController
 
   private
 
-  def render_service(outcome, included: [])
+  def render_service(outcome, included: [], is_collection: false)
     if outcome.valid?
-      render_service_success_json(outcome, included)
+      render_service_success_json(outcome, included, is_collection)
     else
       render_service_failure_json(outcome)
     end
   end
 
-  def render_service_success_json(outcome, included)
+  def render_service_success_json(outcome, included, is_collection)
     data = outcome.result
-    json = JSONAPI::Serializer.serialize(data, include: included)
+    json = JSONAPI::Serializer.serialize(data, include: included, is_collection: is_collection)
     message = outcome.success_message
     render json: json, status: 200
   end

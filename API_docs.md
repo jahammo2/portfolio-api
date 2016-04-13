@@ -1,166 +1,575 @@
-#### POST /api/projects
+#### GET /api/projects
 
 
 | Param | Value |
 | ----- | ----- |
 
-
-Response: 401
-```json
-{
-  "meta": {
-    "success": false,
-    "message": "Authentication failed."
-  },
-  "errors": [
-    "Authorized users only."
-  ]
-}
-```
-#### POST /api/projects
-
-
-| Param | Value |
-| ----- | ----- |
-| data | {"type"=>"projects", "attributes"=>{"github_page_url"=>"http://pouros.io/sanford.konopelski", "web_page_url"=>"http://cruickshankgleason.name/isabel", "title"=>"redundant", "description"=>"synthesizing the bus won't do anything, we need to bypass the open-source AI microchip!", "body"=>"Officiis iste sit ipsam. Soluta veritatis rerum. Neque aliquid deleniti qui in vel et.", "date_deployed"=>"2016-03-20"}, "relationships"=>{"color_set"=>{"data"=>{"background"=>"#4a9f1f", "button"=>"sky blue", "circle"=>"#1a6ac8"}}, "languages"=>{"data"=>[{"title"=>"firewall"}, {"title"=>"port"}]}, "devices"=>{"data"=>[{"title"=>"alarm"}, {"title"=>"feed"}]}}} |
 
 Response: 200
 ```json
 {
-  "data": {
-    "id": "78",
-    "type": "projects",
-    "attributes": {
-      "github_page_url": "http://pouros.io/sanford.konopelski",
-      "web_page_url": "http://cruickshankgleason.name/isabel",
-      "title": "redundant",
-      "description": "synthesizing the bus won't do anything, we need to bypass the open-source AI microchip!",
-      "body": "Officiis iste sit ipsam. Soluta veritatis rerum. Neque aliquid deleniti qui in vel et.",
-      "date_deployed": "2016-03-20"
-    },
-    "links": {
-      "self": "/projects/78"
-    },
-    "relationships": {
-      "color_set": {
-        "links": {
-          "self": "/projects/78/relationships/color_set",
-          "related": "/projects/78/color_set"
+  "data": [
+    {
+      "id": "19",
+      "type": "projects",
+      "attributes": {
+        "github_page_url": "http://heaney.co/albina_heel",
+        "web_page_url": "http://osinski.name/emiliano.purdy",
+        "title": "Reverse-engineered systematic architecture",
+        "description": "open architecture",
+        "body": "Inverse 5th generation secured line",
+        "date_deployed": "2016-03-13",
+        "featured": false
+      },
+      "links": {
+        "self": "/projects/19"
+      },
+      "relationships": {
+        "color_set": {
+          "links": {
+            "self": "/projects/19/relationships/color_set",
+            "related": "/projects/19/color_set"
+          },
+          "data": {
+            "type": "color-sets",
+            "id": "19"
+          }
         },
-        "data": {
-          "type": "color-sets",
-          "id": "63"
+        "languages": {
+          "links": {
+            "self": "/projects/19/relationships/languages",
+            "related": "/projects/19/languages"
+          },
+          "data": [
+            {
+              "type": "languages",
+              "id": "37"
+            },
+            {
+              "type": "languages",
+              "id": "38"
+            }
+          ]
+        },
+        "devices": {
+          "links": {
+            "self": "/projects/19/relationships/devices",
+            "related": "/projects/19/devices"
+          },
+          "data": [
+            {
+              "type": "devices",
+              "id": "37"
+            },
+            {
+              "type": "devices",
+              "id": "38"
+            }
+          ]
         }
+      }
+    },
+    {
+      "id": "20",
+      "type": "projects",
+      "attributes": {
+        "github_page_url": "http://heaney.co/albina_heel",
+        "web_page_url": "http://osinski.name/emiliano.purdy",
+        "title": "Reverse-engineered systematic architecture",
+        "description": "open architecture",
+        "body": "Inverse 5th generation secured line",
+        "date_deployed": "2016-03-13",
+        "featured": false
       },
-      "languages": {
-        "links": {
-          "self": "/projects/78/relationships/languages",
-          "related": "/projects/78/languages"
-        },
-        "data": [
-          {
-            "type": "languages",
-            "id": "91"
-          },
-          {
-            "type": "languages",
-            "id": "92"
-          }
-        ]
+      "links": {
+        "self": "/projects/20"
       },
-      "devices": {
-        "links": {
-          "self": "/projects/78/relationships/devices",
-          "related": "/projects/78/devices"
-        },
-        "data": [
-          {
-            "type": "devices",
-            "id": "108"
+      "relationships": {
+        "color_set": {
+          "links": {
+            "self": "/projects/20/relationships/color_set",
+            "related": "/projects/20/color_set"
           },
-          {
-            "type": "devices",
-            "id": "109"
+          "data": {
+            "type": "color-sets",
+            "id": "20"
           }
-        ]
+        },
+        "languages": {
+          "links": {
+            "self": "/projects/20/relationships/languages",
+            "related": "/projects/20/languages"
+          },
+          "data": [
+            {
+              "type": "languages",
+              "id": "39"
+            },
+            {
+              "type": "languages",
+              "id": "40"
+            }
+          ]
+        },
+        "devices": {
+          "links": {
+            "self": "/projects/20/relationships/devices",
+            "related": "/projects/20/devices"
+          },
+          "data": [
+            {
+              "type": "devices",
+              "id": "39"
+            },
+            {
+              "type": "devices",
+              "id": "40"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "21",
+      "type": "projects",
+      "attributes": {
+        "github_page_url": "http://heaney.co/albina_heel",
+        "web_page_url": "http://osinski.name/emiliano.purdy",
+        "title": "Reverse-engineered systematic architecture",
+        "description": "open architecture",
+        "body": "Inverse 5th generation secured line",
+        "date_deployed": "2016-03-13",
+        "featured": false
+      },
+      "links": {
+        "self": "/projects/21"
+      },
+      "relationships": {
+        "color_set": {
+          "links": {
+            "self": "/projects/21/relationships/color_set",
+            "related": "/projects/21/color_set"
+          },
+          "data": {
+            "type": "color-sets",
+            "id": "21"
+          }
+        },
+        "languages": {
+          "links": {
+            "self": "/projects/21/relationships/languages",
+            "related": "/projects/21/languages"
+          },
+          "data": [
+            {
+              "type": "languages",
+              "id": "41"
+            },
+            {
+              "type": "languages",
+              "id": "42"
+            }
+          ]
+        },
+        "devices": {
+          "links": {
+            "self": "/projects/21/relationships/devices",
+            "related": "/projects/21/devices"
+          },
+          "data": [
+            {
+              "type": "devices",
+              "id": "41"
+            },
+            {
+              "type": "devices",
+              "id": "42"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "22",
+      "type": "projects",
+      "attributes": {
+        "github_page_url": "http://heaney.co/albina_heel",
+        "web_page_url": "http://osinski.name/emiliano.purdy",
+        "title": "Reverse-engineered systematic architecture",
+        "description": "open architecture",
+        "body": "Inverse 5th generation secured line",
+        "date_deployed": "2016-03-13",
+        "featured": false
+      },
+      "links": {
+        "self": "/projects/22"
+      },
+      "relationships": {
+        "color_set": {
+          "links": {
+            "self": "/projects/22/relationships/color_set",
+            "related": "/projects/22/color_set"
+          },
+          "data": {
+            "type": "color-sets",
+            "id": "22"
+          }
+        },
+        "languages": {
+          "links": {
+            "self": "/projects/22/relationships/languages",
+            "related": "/projects/22/languages"
+          },
+          "data": [
+            {
+              "type": "languages",
+              "id": "43"
+            },
+            {
+              "type": "languages",
+              "id": "44"
+            }
+          ]
+        },
+        "devices": {
+          "links": {
+            "self": "/projects/22/relationships/devices",
+            "related": "/projects/22/devices"
+          },
+          "data": [
+            {
+              "type": "devices",
+              "id": "43"
+            },
+            {
+              "type": "devices",
+              "id": "44"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "23",
+      "type": "projects",
+      "attributes": {
+        "github_page_url": "http://heaney.co/albina_heel",
+        "web_page_url": "http://osinski.name/emiliano.purdy",
+        "title": "Reverse-engineered systematic architecture",
+        "description": "open architecture",
+        "body": "Inverse 5th generation secured line",
+        "date_deployed": "2016-03-13",
+        "featured": false
+      },
+      "links": {
+        "self": "/projects/23"
+      },
+      "relationships": {
+        "color_set": {
+          "links": {
+            "self": "/projects/23/relationships/color_set",
+            "related": "/projects/23/color_set"
+          },
+          "data": {
+            "type": "color-sets",
+            "id": "23"
+          }
+        },
+        "languages": {
+          "links": {
+            "self": "/projects/23/relationships/languages",
+            "related": "/projects/23/languages"
+          },
+          "data": [
+            {
+              "type": "languages",
+              "id": "45"
+            },
+            {
+              "type": "languages",
+              "id": "46"
+            }
+          ]
+        },
+        "devices": {
+          "links": {
+            "self": "/projects/23/relationships/devices",
+            "related": "/projects/23/devices"
+          },
+          "data": [
+            {
+              "type": "devices",
+              "id": "45"
+            },
+            {
+              "type": "devices",
+              "id": "46"
+            }
+          ]
+        }
       }
     }
-  },
+  ],
   "included": [
     {
-      "id": "63",
+      "id": "19",
       "type": "color-sets",
       "attributes": {
-        "background": "#4a9f1f",
-        "button": "sky blue",
-        "circle": "#1a6ac8"
+        "background": "red",
+        "button": "fuchsia",
+        "circle": "#2be110"
       },
       "links": {
-        "self": "/color-sets/63"
+        "self": "/color-sets/19"
       }
     },
     {
-      "id": "91",
+      "id": "37",
       "type": "languages",
       "attributes": {
-        "title": "firewall"
+        "title": "project"
       },
       "links": {
-        "self": "/languages/91"
+        "self": "/languages/37"
       }
     },
     {
-      "id": "92",
+      "id": "38",
       "type": "languages",
       "attributes": {
-        "title": "port"
+        "title": "project"
       },
       "links": {
-        "self": "/languages/92"
+        "self": "/languages/38"
       }
     },
     {
-      "id": "108",
+      "id": "37",
       "type": "devices",
       "attributes": {
-        "title": "alarm"
+        "title": "framework"
       },
       "links": {
-        "self": "/devices/108"
+        "self": "/devices/37"
       }
     },
     {
-      "id": "109",
+      "id": "38",
       "type": "devices",
       "attributes": {
-        "title": "feed"
+        "title": "framework"
       },
       "links": {
-        "self": "/devices/109"
+        "self": "/devices/38"
       }
-    }
-  ]
-}
-```
-#### POST /api/projects
-
-
-| Param | Value |
-| ----- | ----- |
-| data | {"type"=>"projects"} |
-
-Response: 422
-```json
-{
-  "meta": {
-    "success": false,
-    "message": "Failure."
-  },
-  "errors": [
+    },
     {
-      "status": "422",
-      "title": "Validation Failed",
-      "detail": "Params do not contain data for color_set, languages, or devices"
+      "id": "20",
+      "type": "color-sets",
+      "attributes": {
+        "background": "red",
+        "button": "red",
+        "circle": "#997a7d"
+      },
+      "links": {
+        "self": "/color-sets/20"
+      }
+    },
+    {
+      "id": "39",
+      "type": "languages",
+      "attributes": {
+        "title": "Function-based"
+      },
+      "links": {
+        "self": "/languages/39"
+      }
+    },
+    {
+      "id": "40",
+      "type": "languages",
+      "attributes": {
+        "title": "Function-based"
+      },
+      "links": {
+        "self": "/languages/40"
+      }
+    },
+    {
+      "id": "39",
+      "type": "devices",
+      "attributes": {
+        "title": "mission-critical"
+      },
+      "links": {
+        "self": "/devices/39"
+      }
+    },
+    {
+      "id": "40",
+      "type": "devices",
+      "attributes": {
+        "title": "mission-critical"
+      },
+      "links": {
+        "self": "/devices/40"
+      }
+    },
+    {
+      "id": "21",
+      "type": "color-sets",
+      "attributes": {
+        "background": "red",
+        "button": "green",
+        "circle": "#7488af"
+      },
+      "links": {
+        "self": "/color-sets/21"
+      }
+    },
+    {
+      "id": "41",
+      "type": "languages",
+      "attributes": {
+        "title": "Configurable"
+      },
+      "links": {
+        "self": "/languages/41"
+      }
+    },
+    {
+      "id": "42",
+      "type": "languages",
+      "attributes": {
+        "title": "Configurable"
+      },
+      "links": {
+        "self": "/languages/42"
+      }
+    },
+    {
+      "id": "41",
+      "type": "devices",
+      "attributes": {
+        "title": "mission-critical"
+      },
+      "links": {
+        "self": "/devices/41"
+      }
+    },
+    {
+      "id": "42",
+      "type": "devices",
+      "attributes": {
+        "title": "mission-critical"
+      },
+      "links": {
+        "self": "/devices/42"
+      }
+    },
+    {
+      "id": "22",
+      "type": "color-sets",
+      "attributes": {
+        "background": "red",
+        "button": "white",
+        "circle": "#d0dc35"
+      },
+      "links": {
+        "self": "/color-sets/22"
+      }
+    },
+    {
+      "id": "43",
+      "type": "languages",
+      "attributes": {
+        "title": "initiative"
+      },
+      "links": {
+        "self": "/languages/43"
+      }
+    },
+    {
+      "id": "44",
+      "type": "languages",
+      "attributes": {
+        "title": "initiative"
+      },
+      "links": {
+        "self": "/languages/44"
+      }
+    },
+    {
+      "id": "43",
+      "type": "devices",
+      "attributes": {
+        "title": "exuding"
+      },
+      "links": {
+        "self": "/devices/43"
+      }
+    },
+    {
+      "id": "44",
+      "type": "devices",
+      "attributes": {
+        "title": "exuding"
+      },
+      "links": {
+        "self": "/devices/44"
+      }
+    },
+    {
+      "id": "23",
+      "type": "color-sets",
+      "attributes": {
+        "background": "red",
+        "button": "indigo",
+        "circle": "#0df9fb"
+      },
+      "links": {
+        "self": "/color-sets/23"
+      }
+    },
+    {
+      "id": "45",
+      "type": "languages",
+      "attributes": {
+        "title": "hybrid"
+      },
+      "links": {
+        "self": "/languages/45"
+      }
+    },
+    {
+      "id": "46",
+      "type": "languages",
+      "attributes": {
+        "title": "hybrid"
+      },
+      "links": {
+        "self": "/languages/46"
+      }
+    },
+    {
+      "id": "45",
+      "type": "devices",
+      "attributes": {
+        "title": "Decentralized"
+      },
+      "links": {
+        "self": "/devices/45"
+      }
+    },
+    {
+      "id": "46",
+      "type": "devices",
+      "attributes": {
+        "title": "Decentralized"
+      },
+      "links": {
+        "self": "/devices/46"
+      }
     }
   ]
 }

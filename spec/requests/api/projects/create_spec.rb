@@ -21,7 +21,8 @@ describe "Project endpoints" do
               title: Faker::Hacker.adjective,
               description: Faker::Hacker.say_something_smart,
               body: Faker::Lorem.paragraph,
-              date_deployed: Faker::Date.backward(60)
+              date_deployed: Faker::Date.backward(60),
+              featured: false
             },
             relationships: {
               color_set: {
@@ -82,7 +83,8 @@ describe "Project endpoints" do
             title: attributes[:title],
             description: attributes[:description],
             body: attributes[:body],
-            date_deployed: attributes[:date_deployed].as_json
+            date_deployed: attributes[:date_deployed].as_json,
+            featured: attributes[:featured]
           },
           links: {
             self: project_link

@@ -1,5 +1,5 @@
 class ProjectSerializer < BaseSerializer
-  attributes :github_page_url, :web_page_url, :title, :description, :body, :date_deployed
+  attributes :github_page_url, :web_page_url, :title, :description, :body, :date_deployed, :featured
 
   has_one :color_set
   has_many :languages
