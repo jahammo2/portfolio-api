@@ -10,295 +10,300 @@ Response: 200
 {
   "data": [
     {
-      "id": "387",
+      "id": "19",
       "type": "projects",
       "attributes": {
-        "github_page_url": "http://kilbackwilderman.info/tristian_kunze",
-        "web_page_url": "http://baumbachjast.net/dante",
-        "title": "Switchable clear-thinking concept",
-        "description": "Ameliorated",
-        "body": "Self-enabling responsive leverage",
-        "date_deployed": "2016-03-13"
+        "github_page_url": "http://heaney.co/albina_heel",
+        "web_page_url": "http://osinski.name/emiliano.purdy",
+        "title": "Reverse-engineered systematic architecture",
+        "description": "open architecture",
+        "body": "Inverse 5th generation secured line",
+        "date_deployed": "2016-03-13",
+        "featured": false
       },
       "links": {
-        "self": "/projects/387"
+        "self": "/projects/19"
       },
       "relationships": {
         "color_set": {
           "links": {
-            "self": "/projects/387/relationships/color_set",
-            "related": "/projects/387/color_set"
+            "self": "/projects/19/relationships/color_set",
+            "related": "/projects/19/color_set"
           },
           "data": {
             "type": "color-sets",
-            "id": "336"
+            "id": "19"
           }
         },
         "languages": {
           "links": {
-            "self": "/projects/387/relationships/languages",
-            "related": "/projects/387/languages"
+            "self": "/projects/19/relationships/languages",
+            "related": "/projects/19/languages"
           },
           "data": [
             {
               "type": "languages",
-              "id": "621"
+              "id": "37"
             },
             {
               "type": "languages",
-              "id": "622"
+              "id": "38"
             }
           ]
         },
         "devices": {
           "links": {
-            "self": "/projects/387/relationships/devices",
-            "related": "/projects/387/devices"
+            "self": "/projects/19/relationships/devices",
+            "related": "/projects/19/devices"
           },
           "data": [
             {
               "type": "devices",
-              "id": "606"
+              "id": "37"
             },
             {
               "type": "devices",
-              "id": "607"
+              "id": "38"
             }
           ]
         }
       }
     },
     {
-      "id": "388",
+      "id": "20",
       "type": "projects",
       "attributes": {
-        "github_page_url": "http://kilbackwilderman.info/tristian_kunze",
-        "web_page_url": "http://baumbachjast.net/dante",
-        "title": "Switchable clear-thinking concept",
-        "description": "Ameliorated",
-        "body": "Self-enabling responsive leverage",
-        "date_deployed": "2016-03-13"
+        "github_page_url": "http://heaney.co/albina_heel",
+        "web_page_url": "http://osinski.name/emiliano.purdy",
+        "title": "Reverse-engineered systematic architecture",
+        "description": "open architecture",
+        "body": "Inverse 5th generation secured line",
+        "date_deployed": "2016-03-13",
+        "featured": false
       },
       "links": {
-        "self": "/projects/388"
+        "self": "/projects/20"
       },
       "relationships": {
         "color_set": {
           "links": {
-            "self": "/projects/388/relationships/color_set",
-            "related": "/projects/388/color_set"
+            "self": "/projects/20/relationships/color_set",
+            "related": "/projects/20/color_set"
           },
           "data": {
             "type": "color-sets",
-            "id": "337"
+            "id": "20"
           }
         },
         "languages": {
           "links": {
-            "self": "/projects/388/relationships/languages",
-            "related": "/projects/388/languages"
+            "self": "/projects/20/relationships/languages",
+            "related": "/projects/20/languages"
           },
           "data": [
             {
               "type": "languages",
-              "id": "623"
+              "id": "39"
             },
             {
               "type": "languages",
-              "id": "624"
+              "id": "40"
             }
           ]
         },
         "devices": {
           "links": {
-            "self": "/projects/388/relationships/devices",
-            "related": "/projects/388/devices"
+            "self": "/projects/20/relationships/devices",
+            "related": "/projects/20/devices"
           },
           "data": [
             {
               "type": "devices",
-              "id": "608"
+              "id": "39"
             },
             {
               "type": "devices",
-              "id": "609"
+              "id": "40"
             }
           ]
         }
       }
     },
     {
-      "id": "389",
+      "id": "21",
       "type": "projects",
       "attributes": {
-        "github_page_url": "http://kilbackwilderman.info/tristian_kunze",
-        "web_page_url": "http://baumbachjast.net/dante",
-        "title": "Switchable clear-thinking concept",
-        "description": "Ameliorated",
-        "body": "Self-enabling responsive leverage",
-        "date_deployed": "2016-03-13"
+        "github_page_url": "http://heaney.co/albina_heel",
+        "web_page_url": "http://osinski.name/emiliano.purdy",
+        "title": "Reverse-engineered systematic architecture",
+        "description": "open architecture",
+        "body": "Inverse 5th generation secured line",
+        "date_deployed": "2016-03-13",
+        "featured": false
       },
       "links": {
-        "self": "/projects/389"
+        "self": "/projects/21"
       },
       "relationships": {
         "color_set": {
           "links": {
-            "self": "/projects/389/relationships/color_set",
-            "related": "/projects/389/color_set"
+            "self": "/projects/21/relationships/color_set",
+            "related": "/projects/21/color_set"
           },
           "data": {
             "type": "color-sets",
-            "id": "338"
+            "id": "21"
           }
         },
         "languages": {
           "links": {
-            "self": "/projects/389/relationships/languages",
-            "related": "/projects/389/languages"
+            "self": "/projects/21/relationships/languages",
+            "related": "/projects/21/languages"
           },
           "data": [
             {
               "type": "languages",
-              "id": "625"
+              "id": "41"
             },
             {
               "type": "languages",
-              "id": "626"
+              "id": "42"
             }
           ]
         },
         "devices": {
           "links": {
-            "self": "/projects/389/relationships/devices",
-            "related": "/projects/389/devices"
+            "self": "/projects/21/relationships/devices",
+            "related": "/projects/21/devices"
           },
           "data": [
             {
               "type": "devices",
-              "id": "610"
+              "id": "41"
             },
             {
               "type": "devices",
-              "id": "611"
+              "id": "42"
             }
           ]
         }
       }
     },
     {
-      "id": "390",
+      "id": "22",
       "type": "projects",
       "attributes": {
-        "github_page_url": "http://kilbackwilderman.info/tristian_kunze",
-        "web_page_url": "http://baumbachjast.net/dante",
-        "title": "Switchable clear-thinking concept",
-        "description": "Ameliorated",
-        "body": "Self-enabling responsive leverage",
-        "date_deployed": "2016-03-13"
+        "github_page_url": "http://heaney.co/albina_heel",
+        "web_page_url": "http://osinski.name/emiliano.purdy",
+        "title": "Reverse-engineered systematic architecture",
+        "description": "open architecture",
+        "body": "Inverse 5th generation secured line",
+        "date_deployed": "2016-03-13",
+        "featured": false
       },
       "links": {
-        "self": "/projects/390"
+        "self": "/projects/22"
       },
       "relationships": {
         "color_set": {
           "links": {
-            "self": "/projects/390/relationships/color_set",
-            "related": "/projects/390/color_set"
+            "self": "/projects/22/relationships/color_set",
+            "related": "/projects/22/color_set"
           },
           "data": {
             "type": "color-sets",
-            "id": "339"
+            "id": "22"
           }
         },
         "languages": {
           "links": {
-            "self": "/projects/390/relationships/languages",
-            "related": "/projects/390/languages"
+            "self": "/projects/22/relationships/languages",
+            "related": "/projects/22/languages"
           },
           "data": [
             {
               "type": "languages",
-              "id": "627"
+              "id": "43"
             },
             {
               "type": "languages",
-              "id": "628"
+              "id": "44"
             }
           ]
         },
         "devices": {
           "links": {
-            "self": "/projects/390/relationships/devices",
-            "related": "/projects/390/devices"
+            "self": "/projects/22/relationships/devices",
+            "related": "/projects/22/devices"
           },
           "data": [
             {
               "type": "devices",
-              "id": "612"
+              "id": "43"
             },
             {
               "type": "devices",
-              "id": "613"
+              "id": "44"
             }
           ]
         }
       }
     },
     {
-      "id": "391",
+      "id": "23",
       "type": "projects",
       "attributes": {
-        "github_page_url": "http://kilbackwilderman.info/tristian_kunze",
-        "web_page_url": "http://baumbachjast.net/dante",
-        "title": "Switchable clear-thinking concept",
-        "description": "Ameliorated",
-        "body": "Self-enabling responsive leverage",
-        "date_deployed": "2016-03-13"
+        "github_page_url": "http://heaney.co/albina_heel",
+        "web_page_url": "http://osinski.name/emiliano.purdy",
+        "title": "Reverse-engineered systematic architecture",
+        "description": "open architecture",
+        "body": "Inverse 5th generation secured line",
+        "date_deployed": "2016-03-13",
+        "featured": false
       },
       "links": {
-        "self": "/projects/391"
+        "self": "/projects/23"
       },
       "relationships": {
         "color_set": {
           "links": {
-            "self": "/projects/391/relationships/color_set",
-            "related": "/projects/391/color_set"
+            "self": "/projects/23/relationships/color_set",
+            "related": "/projects/23/color_set"
           },
           "data": {
             "type": "color-sets",
-            "id": "340"
+            "id": "23"
           }
         },
         "languages": {
           "links": {
-            "self": "/projects/391/relationships/languages",
-            "related": "/projects/391/languages"
+            "self": "/projects/23/relationships/languages",
+            "related": "/projects/23/languages"
           },
           "data": [
             {
               "type": "languages",
-              "id": "629"
+              "id": "45"
             },
             {
               "type": "languages",
-              "id": "630"
+              "id": "46"
             }
           ]
         },
         "devices": {
           "links": {
-            "self": "/projects/391/relationships/devices",
-            "related": "/projects/391/devices"
+            "self": "/projects/23/relationships/devices",
+            "related": "/projects/23/devices"
           },
           "data": [
             {
               "type": "devices",
-              "id": "614"
+              "id": "45"
             },
             {
               "type": "devices",
-              "id": "615"
+              "id": "46"
             }
           ]
         }
@@ -307,263 +312,263 @@ Response: 200
   ],
   "included": [
     {
-      "id": "336",
+      "id": "19",
       "type": "color-sets",
       "attributes": {
         "background": "red",
-        "button": "turquoise",
-        "circle": "#c7df18"
+        "button": "fuchsia",
+        "circle": "#2be110"
       },
       "links": {
-        "self": "/color-sets/336"
+        "self": "/color-sets/19"
       }
     },
     {
-      "id": "621",
+      "id": "37",
       "type": "languages",
       "attributes": {
-        "title": "stable"
+        "title": "project"
       },
       "links": {
-        "self": "/languages/621"
+        "self": "/languages/37"
       }
     },
     {
-      "id": "622",
+      "id": "38",
       "type": "languages",
       "attributes": {
-        "title": "stable"
+        "title": "project"
       },
       "links": {
-        "self": "/languages/622"
+        "self": "/languages/38"
       }
     },
     {
-      "id": "606",
+      "id": "37",
       "type": "devices",
       "attributes": {
-        "title": "website"
+        "title": "framework"
       },
       "links": {
-        "self": "/devices/606"
+        "self": "/devices/37"
       }
     },
     {
-      "id": "607",
+      "id": "38",
       "type": "devices",
       "attributes": {
-        "title": "website"
+        "title": "framework"
       },
       "links": {
-        "self": "/devices/607"
+        "self": "/devices/38"
       }
     },
     {
-      "id": "337",
+      "id": "20",
       "type": "color-sets",
       "attributes": {
         "background": "red",
-        "button": "plum",
-        "circle": "#48808c"
+        "button": "red",
+        "circle": "#997a7d"
       },
       "links": {
-        "self": "/color-sets/337"
+        "self": "/color-sets/20"
       }
     },
     {
-      "id": "623",
+      "id": "39",
       "type": "languages",
       "attributes": {
-        "title": "throughput"
+        "title": "Function-based"
       },
       "links": {
-        "self": "/languages/623"
+        "self": "/languages/39"
       }
     },
     {
-      "id": "624",
+      "id": "40",
       "type": "languages",
       "attributes": {
-        "title": "throughput"
+        "title": "Function-based"
       },
       "links": {
-        "self": "/languages/624"
+        "self": "/languages/40"
       }
     },
     {
-      "id": "608",
+      "id": "39",
       "type": "devices",
       "attributes": {
-        "title": "archive"
+        "title": "mission-critical"
       },
       "links": {
-        "self": "/devices/608"
+        "self": "/devices/39"
       }
     },
     {
-      "id": "609",
+      "id": "40",
       "type": "devices",
       "attributes": {
-        "title": "archive"
+        "title": "mission-critical"
       },
       "links": {
-        "self": "/devices/609"
+        "self": "/devices/40"
       }
     },
     {
-      "id": "338",
+      "id": "21",
       "type": "color-sets",
       "attributes": {
         "background": "red",
-        "button": "violet",
-        "circle": "#47b637"
+        "button": "green",
+        "circle": "#7488af"
       },
       "links": {
-        "self": "/color-sets/338"
+        "self": "/color-sets/21"
       }
     },
     {
-      "id": "625",
+      "id": "41",
       "type": "languages",
       "attributes": {
-        "title": "knowledge user"
+        "title": "Configurable"
       },
       "links": {
-        "self": "/languages/625"
+        "self": "/languages/41"
       }
     },
     {
-      "id": "626",
+      "id": "42",
       "type": "languages",
       "attributes": {
-        "title": "knowledge user"
+        "title": "Configurable"
       },
       "links": {
-        "self": "/languages/626"
+        "self": "/languages/42"
       }
     },
     {
-      "id": "610",
+      "id": "41",
       "type": "devices",
       "attributes": {
-        "title": "Public-key"
+        "title": "mission-critical"
       },
       "links": {
-        "self": "/devices/610"
+        "self": "/devices/41"
       }
     },
     {
-      "id": "611",
+      "id": "42",
       "type": "devices",
       "attributes": {
-        "title": "Public-key"
+        "title": "mission-critical"
       },
       "links": {
-        "self": "/devices/611"
+        "self": "/devices/42"
       }
     },
     {
-      "id": "339",
+      "id": "22",
       "type": "color-sets",
       "attributes": {
         "background": "red",
-        "button": "silver",
-        "circle": "#50b4bc"
+        "button": "white",
+        "circle": "#d0dc35"
       },
       "links": {
-        "self": "/color-sets/339"
+        "self": "/color-sets/22"
       }
     },
     {
-      "id": "627",
+      "id": "43",
       "type": "languages",
       "attributes": {
-        "title": "clear-thinking"
+        "title": "initiative"
       },
       "links": {
-        "self": "/languages/627"
+        "self": "/languages/43"
       }
     },
     {
-      "id": "628",
+      "id": "44",
       "type": "languages",
       "attributes": {
-        "title": "clear-thinking"
+        "title": "initiative"
       },
       "links": {
-        "self": "/languages/628"
+        "self": "/languages/44"
       }
     },
     {
-      "id": "612",
+      "id": "43",
       "type": "devices",
       "attributes": {
-        "title": "Re-contextualized"
+        "title": "exuding"
       },
       "links": {
-        "self": "/devices/612"
+        "self": "/devices/43"
       }
     },
     {
-      "id": "613",
+      "id": "44",
       "type": "devices",
       "attributes": {
-        "title": "Re-contextualized"
+        "title": "exuding"
       },
       "links": {
-        "self": "/devices/613"
+        "self": "/devices/44"
       }
     },
     {
-      "id": "340",
+      "id": "23",
       "type": "color-sets",
       "attributes": {
         "background": "red",
-        "button": "mint green",
-        "circle": "#636051"
+        "button": "indigo",
+        "circle": "#0df9fb"
       },
       "links": {
-        "self": "/color-sets/340"
+        "self": "/color-sets/23"
       }
     },
     {
-      "id": "629",
+      "id": "45",
       "type": "languages",
       "attributes": {
-        "title": "Face to face"
+        "title": "hybrid"
       },
       "links": {
-        "self": "/languages/629"
+        "self": "/languages/45"
       }
     },
     {
-      "id": "630",
+      "id": "46",
       "type": "languages",
       "attributes": {
-        "title": "Face to face"
+        "title": "hybrid"
       },
       "links": {
-        "self": "/languages/630"
+        "self": "/languages/46"
       }
     },
     {
-      "id": "614",
+      "id": "45",
       "type": "devices",
       "attributes": {
-        "title": "Quality-focused"
+        "title": "Decentralized"
       },
       "links": {
-        "self": "/devices/614"
+        "self": "/devices/45"
       }
     },
     {
-      "id": "615",
+      "id": "46",
       "type": "devices",
       "attributes": {
-        "title": "Quality-focused"
+        "title": "Decentralized"
       },
       "links": {
-        "self": "/devices/615"
+        "self": "/devices/46"
       }
     }
   ]

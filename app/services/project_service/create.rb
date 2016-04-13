@@ -1,15 +1,16 @@
 module ProjectService
   class Create < ServiceBase
-    string :github_page_url, 
+    string :github_page_url,
            :web_page_url,
            :title,
            :description,
            :body
     date :date_deployed
+    boolean :featured, default: false
     interface :color_set
     array :languages,
           :devices
-    
+
     def execute
       project = build_project
       validate_and_save(project)
@@ -27,7 +28,8 @@ module ProjectService
         title: title,
         description: description,
         body: body,
-        date_deployed: date_deployed
+        date_deployed: date_deployed,
+        featured: featured
       }
       associations = {
         color_set_attributes: color_set,

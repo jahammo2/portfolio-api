@@ -6,6 +6,7 @@ FactoryGirl.define do
     body Faker::Company.catch_phrase
     description Faker::Company.buzzword
     date_deployed "2016-03-13"
+    featured false
   end
 
   trait :with_color_set do

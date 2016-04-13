@@ -22,7 +22,8 @@ class Api::ProjectsController < Api::ApiController
         :title,
         :description,
         :body,
-        :date_deployed
+        :date_deployed,
+        :featured
       ],
       relationships: [
         color_set: [

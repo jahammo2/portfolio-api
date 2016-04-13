@@ -30,7 +30,8 @@ describe "Project endpoints" do
           title: project[:title],
           description: project[:description],
           body: project[:body],
-          date_deployed: project[:date_deployed].as_json
+          date_deployed: project[:date_deployed].as_json,
+          featured: project[:featured]
         },
         links: {
           self: project_link
