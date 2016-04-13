@@ -7,6 +7,12 @@ class Api::ProjectsController < Api::ApiController
     render_service(outcome, included: included)
   end
 
+  def index
+    outcome = ProjectService::Index.run()
+    included = ['color_set', 'languages', 'devices']
+    render_service(outcome, included: included, is_collection: true)
+  end
+
   private
   def project_params
     params.require(:data).permit(
