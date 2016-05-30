@@ -9,6 +9,7 @@ gem 'carrierwave'
 gem 'jsonapi-serializers'
 gem 'rake', '10.4.2'
 gem 'rack-cors', :require => 'rack/cors'
+gem 'taperole'
 
 group :test, :development do
   gem 'shoulda-matchers', '2.8.0'
