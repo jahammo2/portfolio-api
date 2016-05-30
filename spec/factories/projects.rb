@@ -2,9 +2,9 @@ FactoryGirl.define do
   factory :project do
     github_page_url Faker::Internet.url
     web_page_url Faker::Internet.url
-    title Faker::Company.catch_phrase
-    body Faker::Company.catch_phrase
-    description Faker::Company.buzzword
+    title { Faker::Company.catch_phrase }
+    body { Faker::Lorem.paragraph }
+    description { Faker::Lorem.paragraphs }
     date_deployed "2016-03-13"
     featured false
   end
@@ -14,8 +14,7 @@ FactoryGirl.define do
       project.reload
       FactoryGirl.create(
         :color_set,
-        project: project,
-        background: 'red'
+        project: project
       )
     end
   end

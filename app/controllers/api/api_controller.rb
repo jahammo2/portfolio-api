@@ -26,7 +26,6 @@ class Api::ApiController < ApplicationController
   def render_service_success_json(outcome, included, is_collection)
     data = outcome.result
     json = JSONAPI::Serializer.serialize(data, include: included, is_collection: is_collection)
-    message = outcome.success_message
     render json: json, status: 200
   end
 
