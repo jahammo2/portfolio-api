@@ -3,8 +3,8 @@ FactoryGirl.define do
     github_page_url Faker::Internet.url
     web_page_url Faker::Internet.url
     title { Faker::Company.catch_phrase }
-    body { Faker::Lorem.paragraph }
-    description { Faker::Lorem.paragraphs }
+    body { Faker::Lorem.paragraphs }
+    description { Faker::Lorem.paragraph }
     date_deployed "2016-03-13"
     featured false
   end
