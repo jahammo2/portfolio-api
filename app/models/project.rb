@@ -5,7 +5,7 @@ class Project < ActiveRecord::Base
   has_and_belongs_to_many :devices
   has_one :color_set
 
-  validates :body, presence: true
+  validates :opening_body, presence: true
   validates :description, presence: true
   validates :title, presence: true
   validate :date_deployed_in_past

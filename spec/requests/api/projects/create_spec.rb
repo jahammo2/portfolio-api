@@ -20,7 +20,8 @@ describe "Project endpoints" do
               web_page_url: Faker::Internet.url,
               title: Faker::Hacker.adjective,
               description: Faker::Hacker.say_something_smart,
-              body: Faker::Lorem.paragraph,
+              opening_body: Faker::Lorem.paragraph,
+              closing_body: Faker::Lorem.paragraph,
               date_deployed: Faker::Date.backward(60),
               featured: false
             },
@@ -82,7 +83,8 @@ describe "Project endpoints" do
             web_page_url: attributes[:web_page_url],
             title: attributes[:title],
             description: attributes[:description],
-            body: attributes[:body],
+            opening_body: attributes[:opening_body],
+            closing_body: attributes[:closing_body],
             date_deployed: attributes[:date_deployed].as_json,
             featured: attributes[:featured]
           },
@@ -219,7 +221,8 @@ describe "Project endpoints" do
               web_page_url: Faker::Internet.url,
               title: Faker::Hacker.adjective,
               description: Faker::Hacker.say_something_smart,
-              body: Faker::Lorem.paragraph,
+              opening_body: Faker::Lorem.paragraph,
+              closing_body: Faker::Lorem.paragraph,
               date_deployed: Faker::Date.backward(60)
             },
             relationships: {

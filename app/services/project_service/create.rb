@@ -4,7 +4,8 @@ module ProjectService
            :web_page_url,
            :title,
            :description,
-           :body
+           :opening_body,
+           :closing_body
     date :date_deployed
     boolean :featured, default: false
     interface :color_set
@@ -27,7 +28,8 @@ module ProjectService
         web_page_url: web_page_url,
         title: title,
         description: description,
-        body: body,
+        opening_body: opening_body,
+        closing_body: closing_body,
         date_deployed: date_deployed,
         featured: featured
       }
