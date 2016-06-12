@@ -4,7 +4,7 @@ app_name: portfolio
 be_app_repo: git@github.com:jahammo2/portfolio-api.git
 
 fe_app_repo: git@github.com:jahammo2/portfolio-web_client.git
-fe_build_command: npm run build
+fe_build_command: npm run build-prod
 
 dev_key_files:
   - dev_keys/jordan_rsa.pub

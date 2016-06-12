@@ -6,7 +6,7 @@ RSpec.describe Project, type: :model do
   it { expect(create(:project)).to be_valid }
 
   #### Validations ####
-  it { is_expected.to validate_presence_of(:body) }
+  it { is_expected.to validate_presence_of(:opening_body) }
   it { is_expected.to validate_presence_of(:description) }
   it { is_expected.to validate_presence_of(:title) }
 

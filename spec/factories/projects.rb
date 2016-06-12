@@ -2,8 +2,9 @@ FactoryGirl.define do
   factory :project do
     github_page_url Faker::Internet.url
     web_page_url Faker::Internet.url
-    title { Faker::Company.catch_phrase }
-    body { Faker::Lorem.paragraphs }
+    title { Faker::Company.name }
+    opening_body { Faker::Lorem.paragraphs }
+    closing_body { Faker::Lorem.paragraphs }
     description { Faker::Lorem.paragraph }
     date_deployed "2016-03-13"
     featured false
@@ -25,8 +26,7 @@ FactoryGirl.define do
       FactoryGirl.create_list(
         :language,
         2,
-        projects: [project],
-        title: Faker::Company.buzzword
+        projects: [project]
       )
     end
   end
@@ -37,8 +37,7 @@ FactoryGirl.define do
       FactoryGirl.create_list(
         :device,
         2,
-        projects: [project],
-        title: Faker::Company.buzzword
+        projects: [project]
       )
     end
   end

@@ -29,7 +29,8 @@ describe "Project endpoints" do
           web_page_url: project[:web_page_url],
           title: project[:title],
           description: project[:description],
-          body: project[:body],
+          opening_body: project[:opening_body],
+          closing_body: project[:closing_body],
           date_deployed: project[:date_deployed].as_json,
           featured: project[:featured]
         },

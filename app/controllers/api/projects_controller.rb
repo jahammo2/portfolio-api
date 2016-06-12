@@ -21,7 +21,8 @@ class Api::ProjectsController < Api::ApiController
         :web_page_url,
         :title,
         :description,
-        :body,
+        :opening_body,
+        :closing_body,
         :date_deployed,
         :featured
       ],
