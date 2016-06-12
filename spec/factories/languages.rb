@@ -1,5 +1,5 @@
 FactoryGirl.define do
   factory :language do
-    title "MyString"
+    title { Faker::Company.buzzword }
   end
 end

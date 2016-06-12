@@ -10,300 +10,300 @@ Response: 200
 {
   "data": [
     {
-      "id": "19",
+      "id": "1",
       "type": "projects",
       "attributes": {
-        "github_page_url": "http://heaney.co/albina_heel",
-        "web_page_url": "http://osinski.name/emiliano.purdy",
-        "title": "Reverse-engineered systematic architecture",
-        "description": "open architecture",
-        "body": "Inverse 5th generation secured line",
+        "github_page_url": "http://lind.info/brooklyn",
+        "web_page_url": "http://parisian.biz/elvis",
+        "title": "O'Keefe LLC",
+        "description": "Provident ducimus quibusdam voluptatem nulla sint explicabo quo. Quibusdam vero consequatur quod inventore delectus. Inventore ea aut eos.",
+        "body": "[\"Voluptas cupiditate ea illo ut sequi provident ullam. Magni optio illum sed eveniet rem reiciendis. Cumque voluptatem molestiae incidunt. Ea ullam a minus vel id consectetur rerum. Culpa et non ut dolorem.\", \"Quasi sunt explicabo omnis placeat consectetur voluptatem sit. Autem et ut at ipsam aut ea. Occaecati aut aliquam. Quam consequuntur libero earum qui ea. Dolores veritatis est magnam.\", \"Tempora maiores eum qui dicta amet sit aspernatur. Non qui eveniet voluptatibus nihil reiciendis. Sed est minus incidunt a rerum. Et ipsum recusandae deleniti laborum et qui.\"]",
         "date_deployed": "2016-03-13",
         "featured": false
       },
       "links": {
-        "self": "/projects/19"
+        "self": "/projects/1"
       },
       "relationships": {
         "color_set": {
           "links": {
-            "self": "/projects/19/relationships/color_set",
-            "related": "/projects/19/color_set"
+            "self": "/projects/1/relationships/color_set",
+            "related": "/projects/1/color_set"
           },
           "data": {
             "type": "color-sets",
-            "id": "19"
+            "id": "1"
           }
         },
         "languages": {
           "links": {
-            "self": "/projects/19/relationships/languages",
-            "related": "/projects/19/languages"
+            "self": "/projects/1/relationships/languages",
+            "related": "/projects/1/languages"
           },
           "data": [
             {
               "type": "languages",
-              "id": "37"
+              "id": "1"
             },
             {
               "type": "languages",
-              "id": "38"
+              "id": "2"
             }
           ]
         },
         "devices": {
           "links": {
-            "self": "/projects/19/relationships/devices",
-            "related": "/projects/19/devices"
+            "self": "/projects/1/relationships/devices",
+            "related": "/projects/1/devices"
           },
           "data": [
             {
               "type": "devices",
-              "id": "37"
+              "id": "1"
             },
             {
               "type": "devices",
-              "id": "38"
+              "id": "2"
             }
           ]
         }
       }
     },
     {
-      "id": "20",
+      "id": "2",
       "type": "projects",
       "attributes": {
-        "github_page_url": "http://heaney.co/albina_heel",
-        "web_page_url": "http://osinski.name/emiliano.purdy",
-        "title": "Reverse-engineered systematic architecture",
-        "description": "open architecture",
-        "body": "Inverse 5th generation secured line",
+        "github_page_url": "http://lind.info/brooklyn",
+        "web_page_url": "http://parisian.biz/elvis",
+        "title": "Kling, Bednar and Smith",
+        "description": "Eius dignissimos rerum labore est. Pariatur ut et adipisci accusantium veritatis corrupti quisquam. Itaque voluptatem repudiandae ea saepe reiciendis repellendus.",
+        "body": "[\"Consequatur veniam id alias cumque. Fugit autem quaerat voluptatibus necessitatibus nostrum ut deserunt. Aut mollitia tenetur qui nobis. Vitae dolorum architecto quo itaque. Est aliquam fuga sunt ullam illo ut harum.\", \"Odio nostrum alias eaque. Omnis autem molestias sit aut officiis harum debitis. Quis neque quia sed alias.\", \"Iste tenetur aliquid ullam non hic. Repellendus et itaque. Quidem a et.\"]",
         "date_deployed": "2016-03-13",
         "featured": false
       },
       "links": {
-        "self": "/projects/20"
+        "self": "/projects/2"
       },
       "relationships": {
         "color_set": {
           "links": {
-            "self": "/projects/20/relationships/color_set",
-            "related": "/projects/20/color_set"
+            "self": "/projects/2/relationships/color_set",
+            "related": "/projects/2/color_set"
           },
           "data": {
             "type": "color-sets",
-            "id": "20"
+            "id": "2"
           }
         },
         "languages": {
           "links": {
-            "self": "/projects/20/relationships/languages",
-            "related": "/projects/20/languages"
+            "self": "/projects/2/relationships/languages",
+            "related": "/projects/2/languages"
           },
           "data": [
             {
               "type": "languages",
-              "id": "39"
+              "id": "3"
             },
             {
               "type": "languages",
-              "id": "40"
+              "id": "4"
             }
           ]
         },
         "devices": {
           "links": {
-            "self": "/projects/20/relationships/devices",
-            "related": "/projects/20/devices"
+            "self": "/projects/2/relationships/devices",
+            "related": "/projects/2/devices"
           },
           "data": [
             {
               "type": "devices",
-              "id": "39"
+              "id": "3"
             },
             {
               "type": "devices",
-              "id": "40"
+              "id": "4"
             }
           ]
         }
       }
     },
     {
-      "id": "21",
+      "id": "3",
       "type": "projects",
       "attributes": {
-        "github_page_url": "http://heaney.co/albina_heel",
-        "web_page_url": "http://osinski.name/emiliano.purdy",
-        "title": "Reverse-engineered systematic architecture",
-        "description": "open architecture",
-        "body": "Inverse 5th generation secured line",
+        "github_page_url": "http://lind.info/brooklyn",
+        "web_page_url": "http://parisian.biz/elvis",
+        "title": "Reichel LLC",
+        "description": "Et quae rerum assumenda non. Quis consequatur repudiandae molestiae debitis dolorem sunt. In impedit voluptatem. Soluta est vel.",
+        "body": "[\"Adipisci eum assumenda facere. Et officia non quidem sed quam. Repellat exercitationem voluptatem et error. Ipsum voluptatem suscipit corrupti rerum dolorem inventore.\", \"Aut nobis omnis. Culpa et voluptatum dolorem omnis sunt et. Et tenetur harum incidunt iste ut voluptatum. Quo eum animi quisquam eveniet mollitia. Officiis sunt velit et.\", \"Vero impedit laborum pariatur neque quos. Atque voluptas labore libero. Libero impedit non blanditiis earum temporibus. Expedita quo ea doloremque consectetur.\"]",
         "date_deployed": "2016-03-13",
         "featured": false
       },
       "links": {
-        "self": "/projects/21"
+        "self": "/projects/3"
       },
       "relationships": {
         "color_set": {
           "links": {
-            "self": "/projects/21/relationships/color_set",
-            "related": "/projects/21/color_set"
+            "self": "/projects/3/relationships/color_set",
+            "related": "/projects/3/color_set"
           },
           "data": {
             "type": "color-sets",
-            "id": "21"
+            "id": "3"
           }
         },
         "languages": {
           "links": {
-            "self": "/projects/21/relationships/languages",
-            "related": "/projects/21/languages"
+            "self": "/projects/3/relationships/languages",
+            "related": "/projects/3/languages"
           },
           "data": [
             {
               "type": "languages",
-              "id": "41"
+              "id": "5"
             },
             {
               "type": "languages",
-              "id": "42"
+              "id": "6"
             }
           ]
         },
         "devices": {
           "links": {
-            "self": "/projects/21/relationships/devices",
-            "related": "/projects/21/devices"
+            "self": "/projects/3/relationships/devices",
+            "related": "/projects/3/devices"
           },
           "data": [
             {
               "type": "devices",
-              "id": "41"
+              "id": "5"
             },
             {
               "type": "devices",
-              "id": "42"
+              "id": "6"
             }
           ]
         }
       }
     },
     {
-      "id": "22",
+      "id": "4",
       "type": "projects",
       "attributes": {
-        "github_page_url": "http://heaney.co/albina_heel",
-        "web_page_url": "http://osinski.name/emiliano.purdy",
-        "title": "Reverse-engineered systematic architecture",
-        "description": "open architecture",
-        "body": "Inverse 5th generation secured line",
+        "github_page_url": "http://lind.info/brooklyn",
+        "web_page_url": "http://parisian.biz/elvis",
+        "title": "Thompson-Toy",
+        "description": "Eos reiciendis illum ipsa. Quam enim voluptatibus ut est. Autem est provident aut fugiat unde qui quia. Ad voluptatem est magnam aliquam ratione laborum aperiam. Voluptatibus ipsa soluta.",
+        "body": "[\"Enim blanditiis dolorem numquam fugit. Beatae fuga excepturi est. Corporis consequuntur voluptates deserunt dignissimos officiis velit quia.\", \"Illo reiciendis non. Excepturi impedit non repudiandae inventore ipsa. Eveniet minus qui ut placeat illum.\", \"Dolores et repellendus aut omnis. Labore et accusamus. Sequi quaerat tempore ab. Ullam repudiandae perspiciatis in. Est mollitia facere.\"]",
         "date_deployed": "2016-03-13",
         "featured": false
       },
       "links": {
-        "self": "/projects/22"
+        "self": "/projects/4"
       },
       "relationships": {
         "color_set": {
           "links": {
-            "self": "/projects/22/relationships/color_set",
-            "related": "/projects/22/color_set"
+            "self": "/projects/4/relationships/color_set",
+            "related": "/projects/4/color_set"
           },
           "data": {
             "type": "color-sets",
-            "id": "22"
+            "id": "4"
           }
         },
         "languages": {
           "links": {
-            "self": "/projects/22/relationships/languages",
-            "related": "/projects/22/languages"
+            "self": "/projects/4/relationships/languages",
+            "related": "/projects/4/languages"
           },
           "data": [
             {
               "type": "languages",
-              "id": "43"
+              "id": "7"
             },
             {
               "type": "languages",
-              "id": "44"
+              "id": "8"
             }
           ]
         },
         "devices": {
           "links": {
-            "self": "/projects/22/relationships/devices",
-            "related": "/projects/22/devices"
+            "self": "/projects/4/relationships/devices",
+            "related": "/projects/4/devices"
           },
           "data": [
             {
               "type": "devices",
-              "id": "43"
+              "id": "7"
             },
             {
               "type": "devices",
-              "id": "44"
+              "id": "8"
             }
           ]
         }
       }
     },
     {
-      "id": "23",
+      "id": "5",
       "type": "projects",
       "attributes": {
-        "github_page_url": "http://heaney.co/albina_heel",
-        "web_page_url": "http://osinski.name/emiliano.purdy",
-        "title": "Reverse-engineered systematic architecture",
-        "description": "open architecture",
-        "body": "Inverse 5th generation secured line",
+        "github_page_url": "http://lind.info/brooklyn",
+        "web_page_url": "http://parisian.biz/elvis",
+        "title": "Moen LLC",
+        "description": "Rem consequatur assumenda quod. Vero natus aliquid in. Culpa libero ut illum expedita quisquam nam. Deserunt nam tenetur doloribus et beatae voluptatem ullam.",
+        "body": "[\"Fugiat similique amet iste facere et quos asperiores. Amet hic vel asperiores et nihil quia. Aut odio molestias necessitatibus. Ducimus aliquam voluptatem ipsam perspiciatis in adipisci assumenda.\", \"Dolores aspernatur provident. Beatae in placeat nam ex non unde. Doloribus molestiae modi. Vero quaerat non deserunt aut voluptates autem provident.\", \"Dolorem nobis explicabo. Aut qui ratione. Veritatis tempora est voluptatem enim et in molestias. Voluptas consequatur molestiae nam minus commodi quaerat. Occaecati unde alias aut quae.\"]",
         "date_deployed": "2016-03-13",
         "featured": false
       },
       "links": {
-        "self": "/projects/23"
+        "self": "/projects/5"
       },
       "relationships": {
         "color_set": {
           "links": {
-            "self": "/projects/23/relationships/color_set",
-            "related": "/projects/23/color_set"
+            "self": "/projects/5/relationships/color_set",
+            "related": "/projects/5/color_set"
           },
           "data": {
             "type": "color-sets",
-            "id": "23"
+            "id": "5"
           }
         },
         "languages": {
           "links": {
-            "self": "/projects/23/relationships/languages",
-            "related": "/projects/23/languages"
+            "self": "/projects/5/relationships/languages",
+            "related": "/projects/5/languages"
           },
           "data": [
             {
               "type": "languages",
-              "id": "45"
+              "id": "9"
             },
             {
               "type": "languages",
-              "id": "46"
+              "id": "10"
             }
           ]
         },
         "devices": {
           "links": {
-            "self": "/projects/23/relationships/devices",
-            "related": "/projects/23/devices"
+            "self": "/projects/5/relationships/devices",
+            "related": "/projects/5/devices"
           },
           "data": [
             {
               "type": "devices",
-              "id": "45"
+              "id": "9"
             },
             {
               "type": "devices",
-              "id": "46"
+              "id": "10"
             }
           ]
         }
@@ -312,263 +312,263 @@ Response: 200
   ],
   "included": [
     {
-      "id": "19",
+      "id": "1",
       "type": "color-sets",
       "attributes": {
-        "background": "red",
-        "button": "fuchsia",
-        "circle": "#2be110"
+        "background": "#51d424",
+        "button": "#3a485d",
+        "circle": "#a83d1f"
       },
       "links": {
-        "self": "/color-sets/19"
+        "self": "/color-sets/1"
       }
     },
     {
-      "id": "37",
+      "id": "1",
       "type": "languages",
       "attributes": {
-        "title": "project"
+        "title": "Graphical User Interface"
       },
       "links": {
-        "self": "/languages/37"
+        "self": "/languages/1"
       }
     },
     {
-      "id": "38",
+      "id": "2",
       "type": "languages",
       "attributes": {
-        "title": "project"
+        "title": "Graphical User Interface"
       },
       "links": {
-        "self": "/languages/38"
+        "self": "/languages/2"
       }
     },
     {
-      "id": "37",
+      "id": "1",
       "type": "devices",
       "attributes": {
-        "title": "framework"
+        "title": "time-frame"
       },
       "links": {
-        "self": "/devices/37"
+        "self": "/devices/1"
       }
     },
     {
-      "id": "38",
+      "id": "2",
       "type": "devices",
       "attributes": {
-        "title": "framework"
+        "title": "time-frame"
       },
       "links": {
-        "self": "/devices/38"
+        "self": "/devices/2"
       }
     },
     {
-      "id": "20",
+      "id": "2",
       "type": "color-sets",
       "attributes": {
-        "background": "red",
-        "button": "red",
-        "circle": "#997a7d"
+        "background": "#101bbc",
+        "button": "#c8dfa0",
+        "circle": "#e0a784"
       },
       "links": {
-        "self": "/color-sets/20"
+        "self": "/color-sets/2"
       }
     },
     {
-      "id": "39",
+      "id": "3",
       "type": "languages",
       "attributes": {
-        "title": "Function-based"
+        "title": "encoding"
       },
       "links": {
-        "self": "/languages/39"
+        "self": "/languages/3"
       }
     },
     {
-      "id": "40",
+      "id": "4",
       "type": "languages",
       "attributes": {
-        "title": "Function-based"
+        "title": "encoding"
       },
       "links": {
-        "self": "/languages/40"
+        "self": "/languages/4"
       }
     },
     {
-      "id": "39",
+      "id": "3",
       "type": "devices",
       "attributes": {
-        "title": "mission-critical"
+        "title": "Quality-focused"
       },
       "links": {
-        "self": "/devices/39"
+        "self": "/devices/3"
       }
     },
     {
-      "id": "40",
+      "id": "4",
       "type": "devices",
       "attributes": {
-        "title": "mission-critical"
+        "title": "Quality-focused"
       },
       "links": {
-        "self": "/devices/40"
+        "self": "/devices/4"
       }
     },
     {
-      "id": "21",
+      "id": "3",
       "type": "color-sets",
       "attributes": {
-        "background": "red",
-        "button": "green",
-        "circle": "#7488af"
+        "background": "#a16524",
+        "button": "#14e2d2",
+        "circle": "#188a8b"
       },
       "links": {
-        "self": "/color-sets/21"
+        "self": "/color-sets/3"
       }
     },
     {
-      "id": "41",
+      "id": "5",
       "type": "languages",
       "attributes": {
-        "title": "Configurable"
+        "title": "strategy"
       },
       "links": {
-        "self": "/languages/41"
+        "self": "/languages/5"
       }
     },
     {
-      "id": "42",
+      "id": "6",
       "type": "languages",
       "attributes": {
-        "title": "Configurable"
+        "title": "strategy"
       },
       "links": {
-        "self": "/languages/42"
+        "self": "/languages/6"
       }
     },
     {
-      "id": "41",
+      "id": "5",
       "type": "devices",
       "attributes": {
-        "title": "mission-critical"
+        "title": "Extended"
       },
       "links": {
-        "self": "/devices/41"
+        "self": "/devices/5"
       }
     },
     {
-      "id": "42",
+      "id": "6",
       "type": "devices",
       "attributes": {
-        "title": "mission-critical"
+        "title": "Extended"
       },
       "links": {
-        "self": "/devices/42"
+        "self": "/devices/6"
       }
     },
     {
-      "id": "22",
+      "id": "4",
       "type": "color-sets",
       "attributes": {
-        "background": "red",
-        "button": "white",
-        "circle": "#d0dc35"
+        "background": "#03a756",
+        "button": "#40b888",
+        "circle": "#960a36"
       },
       "links": {
-        "self": "/color-sets/22"
+        "self": "/color-sets/4"
       }
     },
     {
-      "id": "43",
+      "id": "7",
       "type": "languages",
       "attributes": {
-        "title": "initiative"
+        "title": "secondary"
       },
       "links": {
-        "self": "/languages/43"
+        "self": "/languages/7"
       }
     },
     {
-      "id": "44",
+      "id": "8",
       "type": "languages",
       "attributes": {
-        "title": "initiative"
+        "title": "secondary"
       },
       "links": {
-        "self": "/languages/44"
+        "self": "/languages/8"
       }
     },
     {
-      "id": "43",
+      "id": "7",
       "type": "devices",
       "attributes": {
-        "title": "exuding"
+        "title": "transitional"
       },
       "links": {
-        "self": "/devices/43"
+        "self": "/devices/7"
       }
     },
     {
-      "id": "44",
+      "id": "8",
       "type": "devices",
       "attributes": {
-        "title": "exuding"
+        "title": "transitional"
       },
       "links": {
-        "self": "/devices/44"
+        "self": "/devices/8"
       }
     },
     {
-      "id": "23",
+      "id": "5",
       "type": "color-sets",
       "attributes": {
-        "background": "red",
-        "button": "indigo",
-        "circle": "#0df9fb"
+        "background": "#591584",
+        "button": "#2785d1",
+        "circle": "#91de7f"
       },
       "links": {
-        "self": "/color-sets/23"
+        "self": "/color-sets/5"
       }
     },
     {
-      "id": "45",
+      "id": "9",
       "type": "languages",
       "attributes": {
-        "title": "hybrid"
+        "title": "grid-enabled"
       },
       "links": {
-        "self": "/languages/45"
+        "self": "/languages/9"
       }
     },
     {
-      "id": "46",
+      "id": "10",
       "type": "languages",
       "attributes": {
-        "title": "hybrid"
+        "title": "grid-enabled"
       },
       "links": {
-        "self": "/languages/46"
+        "self": "/languages/10"
       }
     },
     {
-      "id": "45",
+      "id": "9",
       "type": "devices",
       "attributes": {
-        "title": "Decentralized"
+        "title": "Enterprise-wide"
       },
       "links": {
-        "self": "/devices/45"
+        "self": "/devices/9"
       }
     },
     {
-      "id": "46",
+      "id": "10",
       "type": "devices",
       "attributes": {
-        "title": "Decentralized"
+        "title": "Enterprise-wide"
       },
       "links": {
-        "self": "/devices/46"
+        "self": "/devices/10"
       }
     }
   ]
