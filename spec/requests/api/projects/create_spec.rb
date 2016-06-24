@@ -1,4 +1,4 @@
-require 'rails_helper'
+require "rails_helper"
 
 describe "Project endpoints" do
   describe "POST /api/projects" do
@@ -86,7 +86,8 @@ describe "Project endpoints" do
             opening_body: attributes[:opening_body],
             closing_body: attributes[:closing_body],
             date_deployed: attributes[:date_deployed].as_json,
-            featured: attributes[:featured]
+            featured: attributes[:featured],
+            header_image: nil
           },
           links: {
             self: project_link
@@ -94,7 +95,7 @@ describe "Project endpoints" do
           relationships: {
             color_set: {
               data: {
-                type: 'color-sets',
+                type: "color-sets",
                 id: ColorSet.last.id.to_s,
               },
               links: {
@@ -105,11 +106,11 @@ describe "Project endpoints" do
             languages: {
               data: [
                 {
-                  type: 'languages',
+                  type: "languages",
                   id: Language.all[-2].id.to_s,
                 },
                 {
-                  type: 'languages',
+                  type: "languages",
                   id: Language.last.id.to_s,
                 }
               ],
@@ -121,11 +122,11 @@ describe "Project endpoints" do
             devices: {
               data: [
                 {
-                  type: 'devices',
+                  type: "devices",
                   id: Device.all[-2].id.to_s,
                 },
                 {
-                  type: 'devices',
+                  type: "devices",
                   id: Device.last.id.to_s,
                 }
               ],
@@ -148,7 +149,7 @@ describe "Project endpoints" do
 
         expect(response_json[:included]).to include(
           {
-            type: 'color-sets',
+            type: "color-sets",
             id: ColorSet.last.id.to_s,
             attributes: {
               background: color_set[:background],
@@ -160,7 +161,7 @@ describe "Project endpoints" do
             }
           },
           {
-            type: 'languages',
+            type: "languages",
             id: Language.last.id.to_s,
             attributes: {
               title: languages[1][:title],
@@ -170,7 +171,7 @@ describe "Project endpoints" do
             }
           },
           {
-            type: 'languages',
+            type: "languages",
             id: Language.all[-2].id.to_s,
             attributes: {
               title: languages[0][:title],
@@ -180,23 +181,39 @@ describe "Project endpoints" do
             }
           },
           {
-            type: 'devices',
+            type: "devices",
             id: Device.last.id.to_s,
             attributes: {
               title: devices[1][:title],
             },
             links: {
               self: "/devices/#{Device.last.id}"
+            },
+            relationships: {
+              screenshot: {
+                links: {
+                  self: "/devices/#{Device.last.id}/relationships/screenshot",
+                  related: "/devices/#{Device.last.id}/screenshot"
+                }
+              }
             }
           },
           {
-            type: 'devices',
+            type: "devices",
             id: Device.all[-2].id.to_s,
             attributes: {
               title: devices[0][:title],
             },
             links: {
               self: "/devices/#{Device.all[-2].id}"
+            },
+            relationships: {
+              screenshot: {
+                links: {
+                  self: "/devices/#{Device.all[-2].id}/relationships/screenshot",
+                  related: "/devices/#{Device.all[-2].id}/screenshot"
+                }
+              }
             }
           }
         )

@@ -10,4 +10,5 @@ RSpec.describe Device, type: :model do
 
   #### Associations ####
   it { is_expected.to have_and_belong_to_many(:projects) }
+  it { is_expected.to have_one(:screenshot) }
 end

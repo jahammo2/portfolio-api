@@ -1,7 +1,7 @@
 require "rails_helper"
 
 describe "Project endpoints" do
-  describe "GET /api/projects" do
+  describe "GET /api/projects/:id" do
     let!(:projects) { create_list(:project, 5, :with_all_properties) }
     let(:project) { projects[0] }
     let(:color_set) { project.color_set }
@@ -9,7 +9,7 @@ describe "Project endpoints" do
     let(:devices) { project.devices }
     let(:project_link) { "/projects/#{project.id}" }
 
-    subject { get "/api/projects" }
+    subject { get "/api/projects/#{project.id}" }
 
     it "returns a 200 without proper header auth" do
       subject
@@ -89,6 +89,10 @@ describe "Project endpoints" do
       SmarfDoc.skip
       subject
 
+      first_device_link = "/devices/#{devices.first.id}"
+      last_device_link = "/devices/#{devices.last.id}"
+      first_screenshot = devices.first.screenshot
+      last_screenshot = devices.last.screenshot
       expect(response_json[:included]).to include(
         {
           type: "color-sets",
@@ -129,13 +133,17 @@ describe "Project endpoints" do
             title: devices.first[:title],
           },
           links: {
-            self: "/devices/#{devices.first.id}"
+            self: first_device_link
           },
           relationships: {
             screenshot: {
               links: {
-                self: "/devices/#{devices.first.id}/relationships/screenshot",
-                related: "/devices/#{devices.first.id}/screenshot"
+                self: "#{first_device_link}/relationships/screenshot",
+                related: "#{first_device_link}/screenshot"
+              },
+              data: {
+                type: "screenshots",
+                id: first_screenshot.id.to_s
               }
             }
           }
@@ -152,20 +160,39 @@ describe "Project endpoints" do
           relationships: {
             screenshot: {
               links: {
-                self: "/devices/#{devices.last.id}/relationships/screenshot",
-                related: "/devices/#{devices.last.id}/screenshot"
+                self: "#{last_device_link}/relationships/screenshot",
+                related: "#{last_device_link}/screenshot"
+              },
+              data: {
+                type: "screenshots",
+                id: last_screenshot.id.to_s
               }
             }
           }
+        },
+        {
+          type: "screenshots",
+          id: first_screenshot.id.to_s,
+          attributes: {
+            caption: first_screenshot.caption,
+            image: first_screenshot.image.url
+          },
+          links: {
+            self: "/screenshots/#{first_screenshot.id}"
+          }
+        },
+        {
+          type: "screenshots",
+          id: last_screenshot.id.to_s,
+          attributes: {
+            caption: last_screenshot.caption,
+            image: last_screenshot.image.url
+          },
+          links: {
+            self: "/screenshots/#{last_screenshot.id}"
+          }
         }
       )
-    end
-
-    it "returns 5 projects" do
-      SmarfDoc.skip
-      subject
-
-      expect(response_json[:data].length).to equal(5)
     end
   end
 end

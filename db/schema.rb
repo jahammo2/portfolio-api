@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160612210546) do
+ActiveRecord::Schema.define(version: 20160624181151) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -92,11 +92,21 @@ ActiveRecord::Schema.define(version: 20160612210546) do
     t.date     "date_deployed"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
-    t.json     "carousel_images"
     t.boolean  "featured"
     t.text     "opening_body"
     t.text     "closing_body"
+    t.string   "header_image"
   end
+
+  create_table "screenshots", force: :cascade do |t|
+    t.text     "caption"
+    t.integer  "device_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string   "image"
+  end
+
+  add_index "screenshots", ["device_id"], name: "index_screenshots_on_device_id", using: :btree
 
   add_foreign_key "devices_projects", "devices"
   add_foreign_key "devices_projects", "projects"
