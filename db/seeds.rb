@@ -6,4 +6,3 @@ if Rails.env.in? %w(development test)
 end
 
 Rails.logger.info "DONE SEEDING DATABASE."
-

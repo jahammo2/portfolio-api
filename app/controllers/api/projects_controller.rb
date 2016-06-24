@@ -3,23 +3,24 @@ class Api::ProjectsController < Api::ApiController
 
   def create
     outcome = ProjectService::Create.run(create_inputs)
-    included = ['color_set', 'languages', 'devices']
+    included = %w{color_set languages devices}
     render_service(outcome, included: included)
   end
 
   def index
-    outcome = ProjectService::Index.run()
-    included = ['color_set', 'languages', 'devices']
+    outcome = ProjectService::Index.run
+    included = %w{color_set languages devices}
     render_service(outcome, included: included, is_collection: true)
   end
 
   def show
     outcome = ProjectService::Show.run(id: params[:id])
-    included = ['color_set', 'languages', 'devices', 'devices.screenshot']
+    included = %w{color_set languages devices devices.screenshot}
     render_service(outcome, included: included, is_collection: false)
   end
 
   private
+
   def project_params
     params.require(:data).permit(
       attributes: [
@@ -51,11 +52,11 @@ class Api::ProjectsController < Api::ApiController
   end
 
   def create_inputs
-    project_params[:attributes].merge({
+    project_params[:attributes].merge(
       color_set: project_params[:relationships][:color_set][:data],
       languages: project_params[:relationships][:languages][:data],
       devices: project_params[:relationships][:devices][:data],
-    })
+    )
   end
 
   def validate_params_exist!

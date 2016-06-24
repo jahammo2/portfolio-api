@@ -2,7 +2,7 @@ require "rails_helper"
 
 describe "Project endpoints" do
   describe "POST /api/projects" do
-    let (:admin) { create(:admin) }
+    let(:admin) { create(:admin) }
 
     it "returns a 401 without proper header auth" do
       post "/api/projects"
@@ -11,7 +11,7 @@ describe "Project endpoints" do
     end
 
     context "when the params are valid" do
-      let (:valid_params) {
+      let(:valid_params) do
         {
           data: {
             type: "projects",
@@ -56,7 +56,7 @@ describe "Project endpoints" do
             }
           },
         }
-      }
+      end
       let(:project) { Project.last }
       let(:project_params) { valid_params[:data] }
 
@@ -221,15 +221,15 @@ describe "Project endpoints" do
     end
 
     context "when the params are not valid" do
-      let (:invalid_params) {
+      let(:invalid_params) do
         {
           data: {
             type: "projects",
             attributes: {}
           }
         }
-      }
-      let (:params_without_title) {
+      end
+      let(:params_without_title) do
         {
           data: {
             type: "projects",
@@ -274,7 +274,7 @@ describe "Project endpoints" do
             }
           },
         }
-      }
+      end
 
       it "returns a 422 if there are no params" do
         authenticated_post "/api/projects", admin, invalid_params
