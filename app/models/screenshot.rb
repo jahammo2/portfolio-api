@@ -1,5 +1,5 @@
 class Screenshot < ActiveRecord::Base
-  mount_uploader :image, ScreenshotUploader
+  mount_uploader :image, ImageUploader
 
   validates :image, presence: true
 
