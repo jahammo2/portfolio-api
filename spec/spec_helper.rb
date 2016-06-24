@@ -26,7 +26,7 @@ RSpec.configure do |config|
   end
 
   # Comment this out if you don't want to regenerate the docs every time you run rspec.
-  config.after(:suite) { SmarfDoc.finish! }
+  # config.after(:suite) { SmarfDoc.finish! }
 
 
     # This option will default to `true` in RSpec 4. It makes the `description`

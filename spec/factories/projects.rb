@@ -43,9 +43,26 @@ FactoryGirl.define do
     end
   end
 
+  trait :with_featured_device do
+    after(:create) do |project|
+      project.reload
+      FactoryGirl.create(
+        :device,
+        featured: true,
+        projects: [project]
+      )
+    end
+  end
+
   trait :with_all_properties do
     with_languages
     with_devices
+    with_color_set
+  end
+
+  trait :with_all_properties_and_featured_device do
+    with_languages
+    with_featured_device
     with_color_set
   end
 end
