@@ -8,6 +8,10 @@ class ProjectSerializer < BaseSerializer
              :date_deployed,
              :featured
 
+  attribute :header_image do
+    object.header_image.try(:url)
+  end
+
   has_one :color_set
   has_many :languages
   has_many :devices

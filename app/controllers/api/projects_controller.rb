@@ -13,6 +13,12 @@ class Api::ProjectsController < Api::ApiController
     render_service(outcome, included: included, is_collection: true)
   end
 
+  def show
+    outcome = ProjectService::Show.run(id: params[:id])
+    included = ['color_set', 'languages', 'devices', 'devices.screenshot']
+    render_service(outcome, included: included, is_collection: false)
+  end
+
   private
   def project_params
     params.require(:data).permit(

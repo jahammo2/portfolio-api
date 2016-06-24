@@ -22,67 +22,68 @@ Response: 401
 
 | Param | Value |
 | ----- | ----- |
-| data | {"type"=>"projects", "attributes"=>{"github_page_url"=>"http://osinski.net/isabella", "web_page_url"=>"http://millermohr.info/jerrold_smitham", "title"=>"auxiliary", "description"=>"calculating the panel won't do anything, we need to connect the digital SDD application!", "opening_body"=>"Saepe voluptatum odit itaque. Ipsam quia sint minus. Ipsum rerum blanditiis qui sunt est voluptatem accusamus. Voluptate culpa doloribus laboriosam. Non et tenetur aspernatur eum.", "closing_body"=>"Accusamus voluptatem maxime quo et quidem quia. Itaque sit dolorem eos odit. Nulla dolore animi rerum. Ut ipsum ut et animi dolore et. Architecto deleniti expedita cupiditate doloremque et.", "date_deployed"=>"2016-05-24", "featured"=>"false"}, "relationships"=>{"color_set"=>{"data"=>{"background"=>"#0d0f37", "button"=>"orchid", "circle"=>"#97d648"}}, "languages"=>{"data"=>[{"title"=>"port"}, {"title"=>"capacitor"}]}, "devices"=>{"data"=>[{"title"=>"card"}, {"title"=>"monitor"}]}}} |
+| data | {"type"=>"projects", "attributes"=>{"github_page_url"=>"http://cummingsprosacco.io/philip.jacobson", "web_page_url"=>"http://macgyvermayert.info/presley_littel", "title"=>"neural", "description"=>"If we back up the interface, we can get to the JBOD feed through the digital AGP driver!", "opening_body"=>"Inventore ipsam exercitationem deserunt facere velit nisi velit. Quis accusamus tenetur ex qui. Enim et eius omnis.", "closing_body"=>"Laborum debitis consequatur atque. Occaecati dolorum animi odit. Et ut aut. Optio asperiores dolorem odio illo occaecati. Reprehenderit repellat maxime vel fugit ut.", "date_deployed"=>"2016-06-22", "featured"=>"false"}, "relationships"=>{"color_set"=>{"data"=>{"background"=>"#b32d24", "button"=>"silver", "circle"=>"#543008"}}, "languages"=>{"data"=>[{"title"=>"feed"}, {"title"=>"bandwidth"}]}, "devices"=>{"data"=>[{"title"=>"card"}, {"title"=>"feed"}]}}} |
 
 Response: 200
 ```json
 {
   "data": {
-    "id": "8",
+    "id": "985",
     "type": "projects",
     "attributes": {
-      "github_page_url": "http://osinski.net/isabella",
-      "web_page_url": "http://millermohr.info/jerrold_smitham",
-      "title": "auxiliary",
-      "description": "calculating the panel won't do anything, we need to connect the digital SDD application!",
-      "opening_body": "Saepe voluptatum odit itaque. Ipsam quia sint minus. Ipsum rerum blanditiis qui sunt est voluptatem accusamus. Voluptate culpa doloribus laboriosam. Non et tenetur aspernatur eum.",
-      "closing_body": "Accusamus voluptatem maxime quo et quidem quia. Itaque sit dolorem eos odit. Nulla dolore animi rerum. Ut ipsum ut et animi dolore et. Architecto deleniti expedita cupiditate doloremque et.",
-      "date_deployed": "2016-05-24",
-      "featured": false
+      "github_page_url": "http://cummingsprosacco.io/philip.jacobson",
+      "web_page_url": "http://macgyvermayert.info/presley_littel",
+      "title": "neural",
+      "description": "If we back up the interface, we can get to the JBOD feed through the digital AGP driver!",
+      "opening_body": "Inventore ipsam exercitationem deserunt facere velit nisi velit. Quis accusamus tenetur ex qui. Enim et eius omnis.",
+      "closing_body": "Laborum debitis consequatur atque. Occaecati dolorum animi odit. Et ut aut. Optio asperiores dolorem odio illo occaecati. Reprehenderit repellat maxime vel fugit ut.",
+      "date_deployed": "2016-06-22",
+      "featured": false,
+      "header_image": null
     },
     "links": {
-      "self": "/projects/8"
+      "self": "/projects/985"
     },
     "relationships": {
       "color_set": {
         "links": {
-          "self": "/projects/8/relationships/color_set",
-          "related": "/projects/8/color_set"
+          "self": "/projects/985/relationships/color_set",
+          "related": "/projects/985/color_set"
         },
         "data": {
           "type": "color-sets",
-          "id": "7"
+          "id": "975"
         }
       },
       "languages": {
         "links": {
-          "self": "/projects/8/relationships/languages",
-          "related": "/projects/8/languages"
+          "self": "/projects/985/relationships/languages",
+          "related": "/projects/985/languages"
         },
         "data": [
           {
             "type": "languages",
-            "id": "11"
+            "id": "1941"
           },
           {
             "type": "languages",
-            "id": "12"
+            "id": "1942"
           }
         ]
       },
       "devices": {
         "links": {
-          "self": "/projects/8/relationships/devices",
-          "related": "/projects/8/devices"
+          "self": "/projects/985/relationships/devices",
+          "related": "/projects/985/devices"
         },
         "data": [
           {
             "type": "devices",
-            "id": "12"
+            "id": "1953"
           },
           {
             "type": "devices",
-            "id": "13"
+            "id": "1954"
           }
         ]
       }
@@ -90,55 +91,71 @@ Response: 200
   },
   "included": [
     {
-      "id": "7",
+      "id": "975",
       "type": "color-sets",
       "attributes": {
-        "background": "#0d0f37",
-        "button": "orchid",
-        "circle": "#97d648"
+        "background": "#b32d24",
+        "button": "silver",
+        "circle": "#543008"
       },
       "links": {
-        "self": "/color-sets/7"
+        "self": "/color-sets/975"
       }
     },
     {
-      "id": "11",
+      "id": "1941",
       "type": "languages",
       "attributes": {
-        "title": "port"
+        "title": "feed"
       },
       "links": {
-        "self": "/languages/11"
+        "self": "/languages/1941"
       }
     },
     {
-      "id": "12",
+      "id": "1942",
       "type": "languages",
       "attributes": {
-        "title": "capacitor"
+        "title": "bandwidth"
       },
       "links": {
-        "self": "/languages/12"
+        "self": "/languages/1942"
       }
     },
     {
-      "id": "12",
+      "id": "1953",
       "type": "devices",
       "attributes": {
         "title": "card"
       },
       "links": {
-        "self": "/devices/12"
+        "self": "/devices/1953"
+      },
+      "relationships": {
+        "screenshot": {
+          "links": {
+            "self": "/devices/1953/relationships/screenshot",
+            "related": "/devices/1953/screenshot"
+          }
+        }
       }
     },
     {
-      "id": "13",
+      "id": "1954",
       "type": "devices",
       "attributes": {
-        "title": "monitor"
+        "title": "feed"
       },
       "links": {
-        "self": "/devices/13"
+        "self": "/devices/1954"
+      },
+      "relationships": {
+        "screenshot": {
+          "links": {
+            "self": "/devices/1954/relationships/screenshot",
+            "related": "/devices/1954/screenshot"
+          }
+        }
       }
     }
   ]
@@ -179,305 +196,310 @@ Response: 200
 {
   "data": [
     {
-      "id": "10",
+      "id": "987",
       "type": "projects",
       "attributes": {
-        "github_page_url": "http://schaden.org/walker",
-        "web_page_url": "http://hoegerwaelchi.info/reba.rohan",
-        "title": "Jones, Jenkins and Jaskolski",
-        "description": "Voluptas possimus qui sit ipsam. Magnam est quam voluptas architecto aut dignissimos. Sint qui esse aut error aut est.",
-        "opening_body": "[\"Vitae dolores nesciunt. Maxime ex nihil eligendi. Et perferendis sit. Id molestiae et non quo.\", \"Odit eos distinctio repellendus voluptatem explicabo. Voluptas exercitationem temporibus ut in omnis aut esse. Dolores dignissimos repellendus. Architecto veritatis voluptatum dolores laboriosam illum. Id deserunt blanditiis deleniti illum.\", \"Rerum ut ipsum architecto unde perspiciatis quia. Veniam ea deserunt perferendis occaecati natus optio explicabo. Iste hic nesciunt sint sed. Architecto aut ipsum quo molestias consequuntur perferendis. Enim sint repellat eum vero magnam soluta sit.\"]",
-        "closing_body": "[\"Sit aut distinctio. Optio voluptatibus et ab. Maiores voluptatem accusamus quis. Voluptatem quam ex sunt nihil rerum.\", \"Quos autem eveniet id. Consequatur vero adipisci est maxime numquam ratione necessitatibus. Maiores porro in qui excepturi temporibus reprehenderit dolorem. Mollitia ad sint accusantium non esse sit culpa. Eligendi earum sint nobis perferendis deleniti voluptatem.\", \"Dignissimos sint accusantium ratione laudantium. Dolores tempora molestiae. Quia animi est est quasi suscipit ut commodi.\"]",
+        "github_page_url": "http://murphymurray.net/sammie",
+        "web_page_url": "http://batzmacgyver.biz/eric",
+        "title": "Brown, Okuneva and Casper",
+        "description": "Incidunt iusto numquam. Ullam blanditiis id eos itaque dicta. Sint iste magnam odio quaerat vel at. Quas quia laboriosam sed ducimus velit eos.",
+        "opening_body": "[\"Ut qui nobis ducimus ipsum porro. Molestias harum commodi eaque dolorem quam. Adipisci tempora alias modi velit facilis sunt. Soluta ad quos veniam eum error. Deserunt atque repellendus explicabo rerum vel.\", \"Quos iste harum porro rerum. Eligendi beatae veritatis dolores non ut consectetur. Architecto explicabo et nihil. Saepe sit ab voluptate autem quia dolorem.\", \"Perferendis et sequi. Molestiae et minima. Soluta in ut commodi accusamus tempore accusantium.\"]",
+        "closing_body": "[\"Alias minima animi accusamus. Consequuntur hic vero. Minus quidem sapiente aspernatur ullam nemo impedit. Ab natus magnam. Ipsa enim sed doloribus qui fuga mollitia nulla.\", \"Provident praesentium ut earum. Exercitationem consequatur rerum labore perspiciatis dolorem. Repellendus culpa tenetur sit cum.\", \"Quibusdam non commodi cumque maiores. Ipsa sint qui consequatur libero animi et. Quia quam impedit ut saepe. Velit et est necessitatibus natus voluptas. Dolorum aut perferendis alias vero earum.\"]",
         "date_deployed": "2016-03-13",
-        "featured": false
+        "featured": false,
+        "header_image": "/uploads/project/header_image/987/food-01.png"
       },
       "links": {
-        "self": "/projects/10"
+        "self": "/projects/987"
       },
       "relationships": {
         "color_set": {
           "links": {
-            "self": "/projects/10/relationships/color_set",
-            "related": "/projects/10/color_set"
+            "self": "/projects/987/relationships/color_set",
+            "related": "/projects/987/color_set"
           },
           "data": {
             "type": "color-sets",
-            "id": "9"
+            "id": "977"
           }
         },
         "languages": {
           "links": {
-            "self": "/projects/10/relationships/languages",
-            "related": "/projects/10/languages"
+            "self": "/projects/987/relationships/languages",
+            "related": "/projects/987/languages"
           },
           "data": [
             {
               "type": "languages",
-              "id": "15"
+              "id": "1945"
             },
             {
               "type": "languages",
-              "id": "16"
+              "id": "1946"
             }
           ]
         },
         "devices": {
           "links": {
-            "self": "/projects/10/relationships/devices",
-            "related": "/projects/10/devices"
+            "self": "/projects/987/relationships/devices",
+            "related": "/projects/987/devices"
           },
           "data": [
             {
               "type": "devices",
-              "id": "16"
+              "id": "1957"
             },
             {
               "type": "devices",
-              "id": "17"
+              "id": "1958"
             }
           ]
         }
       }
     },
     {
-      "id": "11",
+      "id": "988",
       "type": "projects",
       "attributes": {
-        "github_page_url": "http://schaden.org/walker",
-        "web_page_url": "http://hoegerwaelchi.info/reba.rohan",
-        "title": "Graham, Skiles and Goldner",
-        "description": "Sit quisquam nemo enim tempore. Magnam consequatur voluptatem omnis tempore id enim. Fuga quia soluta rerum sit fugiat illum.",
-        "opening_body": "[\"Ipsam excepturi dicta reprehenderit ea vel sit tenetur. Asperiores quasi perferendis voluptatem necessitatibus commodi et et. Omnis reiciendis et libero et. Autem animi nulla aliquid quae doloremque.\", \"Harum iure quia. Hic qui autem neque necessitatibus odio ut iure. Non iure consequatur debitis culpa et. Molestiae distinctio praesentium et facere. Tempore et et.\", \"Maiores voluptas cumque. Iure quo et eum et ut. Illo est facere. In eum debitis. Vitae veritatis ratione repellat voluptas aut velit rerum.\"]",
-        "closing_body": "[\"Ullam asperiores sapiente error voluptatem quasi enim. Sit accusamus cumque. Dolorem facere ipsa nostrum est perferendis sit quaerat.\", \"Maxime impedit quas debitis sapiente ad. Voluptas incidunt doloremque repellendus voluptate soluta. Omnis error animi delectus amet suscipit quasi. Aspernatur quia accusamus.\", \"Quod cumque voluptatem asperiores beatae quia. Est ut qui hic laudantium eaque dolorem est. Cumque quod voluptas et voluptatem. Quam corporis eum.\"]",
+        "github_page_url": "http://murphymurray.net/sammie",
+        "web_page_url": "http://batzmacgyver.biz/eric",
+        "title": "Quitzon Inc",
+        "description": "Ipsam eligendi magni. Deleniti harum aut expedita doloremque non. Dolor porro quam saepe non adipisci atque ut.",
+        "opening_body": "[\"Natus voluptates quisquam autem velit. Nisi consectetur possimus. Qui aliquid aut sed sit odio. Voluptas alias placeat dolorum.\", \"Sit molestias ducimus pariatur aut. Ad veritatis natus eius aliquid officiis. Qui nihil doloribus voluptas odit.\", \"Voluptas consequuntur esse maxime neque atque. Rem doloremque et quia corporis reprehenderit iure alias. Vel ratione ullam minus veritatis voluptatem.\"]",
+        "closing_body": "[\"Eius voluptatem sunt eos. Aperiam quis qui et ab qui. Odit veniam quia eos inventore. Temporibus qui incidunt eos distinctio in repellendus vel. Rerum esse aut.\", \"Autem vel quibusdam. Exercitationem qui temporibus accusantium. Aspernatur facere perspiciatis perferendis.\", \"Ea illo voluptatibus. Laudantium voluptate vitae minus dolor vel eum. Ullam saepe aut. Voluptatum tempora quia itaque magni.\"]",
         "date_deployed": "2016-03-13",
-        "featured": false
+        "featured": false,
+        "header_image": "/uploads/project/header_image/988/food-01.png"
       },
       "links": {
-        "self": "/projects/11"
+        "self": "/projects/988"
       },
       "relationships": {
         "color_set": {
           "links": {
-            "self": "/projects/11/relationships/color_set",
-            "related": "/projects/11/color_set"
+            "self": "/projects/988/relationships/color_set",
+            "related": "/projects/988/color_set"
           },
           "data": {
             "type": "color-sets",
-            "id": "10"
+            "id": "978"
           }
         },
         "languages": {
           "links": {
-            "self": "/projects/11/relationships/languages",
-            "related": "/projects/11/languages"
+            "self": "/projects/988/relationships/languages",
+            "related": "/projects/988/languages"
           },
           "data": [
             {
               "type": "languages",
-              "id": "17"
+              "id": "1947"
             },
             {
               "type": "languages",
-              "id": "18"
+              "id": "1948"
             }
           ]
         },
         "devices": {
           "links": {
-            "self": "/projects/11/relationships/devices",
-            "related": "/projects/11/devices"
+            "self": "/projects/988/relationships/devices",
+            "related": "/projects/988/devices"
           },
           "data": [
             {
               "type": "devices",
-              "id": "18"
+              "id": "1959"
             },
             {
               "type": "devices",
-              "id": "19"
+              "id": "1960"
             }
           ]
         }
       }
     },
     {
-      "id": "12",
+      "id": "989",
       "type": "projects",
       "attributes": {
-        "github_page_url": "http://schaden.org/walker",
-        "web_page_url": "http://hoegerwaelchi.info/reba.rohan",
-        "title": "Rutherford-Parisian",
-        "description": "Iste architecto est officiis perspiciatis beatae. Modi assumenda quis voluptas doloribus. Amet eum possimus. Nesciunt provident earum et.",
-        "opening_body": "[\"Reiciendis vel atque rerum qui molestiae. Libero voluptatum ea et omnis. Placeat quaerat aliquid omnis tempore ut consequatur.\", \"Et atque sit. Architecto corporis illo ut iure pariatur dolorum dolorem. Qui perferendis voluptas omnis non eaque. Voluptatem quod iusto dolore. Est eveniet laborum molestiae aut.\", \"Et optio non reiciendis. Nulla voluptatum temporibus quia ratione. Aut aut reprehenderit omnis vel suscipit voluptates. Quis perspiciatis exercitationem aut vitae odio facilis omnis.\"]",
-        "closing_body": "[\"Magni quae natus debitis. Laudantium consequatur ab a et perspiciatis fugit. Aut natus nesciunt.\", \"Voluptatum dicta dolor hic optio voluptatem qui. Quia ut aliquid quia dolorem. Deleniti rerum porro repellat quisquam ut id eaque. Corporis amet nihil. Nostrum dolores voluptas quis ducimus tempora tempore.\", \"Et praesentium beatae velit rem reprehenderit quas. Labore voluptates dicta. Dolore voluptatem aut autem rerum voluptatem reprehenderit et.\"]",
+        "github_page_url": "http://murphymurray.net/sammie",
+        "web_page_url": "http://batzmacgyver.biz/eric",
+        "title": "Cronin, Schuppe and Ondricka",
+        "description": "Aut laborum iure. Ipsam sed quia unde et laudantium. Qui est sed nihil libero. Id sequi ut dignissimos totam a. Facere cum assumenda suscipit.",
+        "opening_body": "[\"Quia et qui magnam dignissimos id. Eum cupiditate velit id est eius voluptatem aliquam. Iste animi eveniet architecto voluptatem et neque. Repellat reprehenderit quibusdam consequatur reiciendis omnis enim in.\", \"Eius voluptatum dolor eos neque non animi temporibus. Consequuntur eos aut consectetur dignissimos quisquam dolor velit. Dolorum a officiis mollitia corporis eos incidunt eligendi. Aut vitae occaecati voluptatem earum. Quae eveniet ullam in soluta et voluptatem libero.\", \"Dolorem pariatur omnis deleniti. Unde in molestiae totam doloremque harum eum. Est impedit ut sint facilis omnis. Quos consequatur corrupti. Vel molestiae libero sit velit.\"]",
+        "closing_body": "[\"Distinctio nulla soluta dolores et accusantium vel. Aut repudiandae porro vel tenetur. Harum et voluptates. Enim deleniti dicta rem dignissimos non.\", \"Expedita mollitia et aperiam eum dolores ut molestiae. Nihil iure et qui enim quia quis laudantium. Omnis voluptatum in. Possimus dolorem et tempore exercitationem minus.\", \"Enim nobis voluptate non. Qui quisquam omnis harum odit. Sed non excepturi.\"]",
         "date_deployed": "2016-03-13",
-        "featured": false
+        "featured": false,
+        "header_image": "/uploads/project/header_image/989/food-01.png"
       },
       "links": {
-        "self": "/projects/12"
+        "self": "/projects/989"
       },
       "relationships": {
         "color_set": {
           "links": {
-            "self": "/projects/12/relationships/color_set",
-            "related": "/projects/12/color_set"
+            "self": "/projects/989/relationships/color_set",
+            "related": "/projects/989/color_set"
           },
           "data": {
             "type": "color-sets",
-            "id": "11"
+            "id": "979"
           }
         },
         "languages": {
           "links": {
-            "self": "/projects/12/relationships/languages",
-            "related": "/projects/12/languages"
+            "self": "/projects/989/relationships/languages",
+            "related": "/projects/989/languages"
           },
           "data": [
             {
               "type": "languages",
-              "id": "19"
+              "id": "1949"
             },
             {
               "type": "languages",
-              "id": "20"
+              "id": "1950"
             }
           ]
         },
         "devices": {
           "links": {
-            "self": "/projects/12/relationships/devices",
-            "related": "/projects/12/devices"
+            "self": "/projects/989/relationships/devices",
+            "related": "/projects/989/devices"
           },
           "data": [
             {
               "type": "devices",
-              "id": "20"
+              "id": "1961"
             },
             {
               "type": "devices",
-              "id": "21"
+              "id": "1962"
             }
           ]
         }
       }
     },
     {
-      "id": "13",
+      "id": "990",
       "type": "projects",
       "attributes": {
-        "github_page_url": "http://schaden.org/walker",
-        "web_page_url": "http://hoegerwaelchi.info/reba.rohan",
-        "title": "Grant, Wilderman and Green",
-        "description": "Voluptate et eos quo. Illo aut aut ratione. Et autem amet.",
-        "opening_body": "[\"Eius sit ea officiis deleniti est. Repudiandae laborum pariatur quia voluptatem optio. Consectetur provident sapiente molestiae ea eos. Dolor voluptatem quo explicabo est. Molestias quis doloremque aut facilis deleniti fuga aut.\", \"Optio voluptatem sint fugiat reiciendis necessitatibus natus libero. Consequatur at quia dolores quia earum. Laborum quaerat aut. Voluptatem itaque animi numquam accusamus non autem delectus.\", \"Incidunt sint sit. Dolore doloribus non rem ea. Laborum error voluptatem sapiente minus doloribus provident possimus. Temporibus rerum aut aliquam perferendis itaque debitis. Aliquid accusamus nemo illo aut nulla eveniet labore.\"]",
-        "closing_body": "[\"Quam ad vel voluptatum illum quae. Nesciunt beatae voluptatem consequatur. Totam omnis libero.\", \"Et quam et architecto unde iste officiis hic. Nulla quasi debitis dolore velit odio veniam. Et fuga voluptas totam iste in error. Debitis ex et at maxime.\", \"Et ex culpa eos magnam officia. Est dolorem accusantium eligendi voluptatem tempora. Dolores numquam impedit velit eos sit.\"]",
+        "github_page_url": "http://murphymurray.net/sammie",
+        "web_page_url": "http://batzmacgyver.biz/eric",
+        "title": "Boehm Inc",
+        "description": "Officia sint mollitia similique molestiae. Esse sed omnis enim necessitatibus. Cumque odio doloremque quod temporibus molestias maxime et.",
+        "opening_body": "[\"Eius et quis non dolor. Tempore impedit voluptatem magni optio unde. Aut ratione sapiente architecto et illum minima.\", \"Ipsam totam fugit eius corrupti. Consequatur illo iusto aliquid quas qui. Eum omnis non consequatur dolor ut minima.\", \"Ut provident id. Adipisci voluptatum consequatur quasi. Aspernatur error ipsum.\"]",
+        "closing_body": "[\"Ad omnis impedit veniam vel sint voluptatum quo. Optio non dicta quas. Id officiis modi facilis eius occaecati.\", \"Distinctio ut fugiat architecto neque non. Rerum aut repellat possimus. Quibusdam quia corporis perspiciatis est qui tempore. Aliquam et consequatur et doloribus magni rerum.\", \"Enim quaerat quia tempore iste nulla. Provident ad sunt. Reiciendis minus quod sunt. Consequatur non libero quas.\"]",
         "date_deployed": "2016-03-13",
-        "featured": false
+        "featured": false,
+        "header_image": "/uploads/project/header_image/990/food-01.png"
       },
       "links": {
-        "self": "/projects/13"
+        "self": "/projects/990"
       },
       "relationships": {
         "color_set": {
           "links": {
-            "self": "/projects/13/relationships/color_set",
-            "related": "/projects/13/color_set"
+            "self": "/projects/990/relationships/color_set",
+            "related": "/projects/990/color_set"
           },
           "data": {
             "type": "color-sets",
-            "id": "12"
+            "id": "980"
           }
         },
         "languages": {
           "links": {
-            "self": "/projects/13/relationships/languages",
-            "related": "/projects/13/languages"
+            "self": "/projects/990/relationships/languages",
+            "related": "/projects/990/languages"
           },
           "data": [
             {
               "type": "languages",
-              "id": "21"
+              "id": "1951"
             },
             {
               "type": "languages",
-              "id": "22"
+              "id": "1952"
             }
           ]
         },
         "devices": {
           "links": {
-            "self": "/projects/13/relationships/devices",
-            "related": "/projects/13/devices"
+            "self": "/projects/990/relationships/devices",
+            "related": "/projects/990/devices"
           },
           "data": [
             {
               "type": "devices",
-              "id": "22"
+              "id": "1963"
             },
             {
               "type": "devices",
-              "id": "23"
+              "id": "1964"
             }
           ]
         }
       }
     },
     {
-      "id": "14",
+      "id": "991",
       "type": "projects",
       "attributes": {
-        "github_page_url": "http://schaden.org/walker",
-        "web_page_url": "http://hoegerwaelchi.info/reba.rohan",
-        "title": "Champlin-Jacobi",
-        "description": "Autem temporibus a porro sint. Autem id qui explicabo dolor. Quia repellendus non. Quasi adipisci hic sit voluptates eos.",
-        "opening_body": "[\"Vel eius omnis ex. Excepturi eum est. Sed qui sed hic minima voluptate est. Ut qui alias.\", \"Dignissimos voluptatum ea nulla sapiente quo. In ducimus nihil doloribus est fuga dolorem. Odio laudantium quisquam voluptas repellendus distinctio.\", \"Nemo qui voluptas sit earum magni veniam qui. Qui hic consequatur facere omnis qui qui. Laborum ratione sunt consequuntur deleniti corrupti.\"]",
-        "closing_body": "[\"Fugiat iure laudantium adipisci aut dolor. Blanditiis dolorem sunt asperiores aspernatur omnis libero totam. Minima sed laudantium. Dolorem nisi incidunt qui aut quos rerum. Perferendis numquam earum eius.\", \"Corporis eos blanditiis quo nisi totam. Voluptatem consectetur commodi consequatur ipsam et. Dolorem rem alias mollitia. Temporibus odio et ipsa est ab dolor ut.\", \"Praesentium tempore veritatis delectus. Quia consequuntur cumque ab. Explicabo quas corrupti velit voluptatem dolores quis enim.\"]",
+        "github_page_url": "http://murphymurray.net/sammie",
+        "web_page_url": "http://batzmacgyver.biz/eric",
+        "title": "Weissnat-Satterfield",
+        "description": "Dolorem unde harum deserunt qui. Dolore molestias quia ipsam natus alias id quis. Nihil facilis sunt.",
+        "opening_body": "[\"Voluptas est eaque et. Dolorem et ex dolore quia. Facilis saepe incidunt rerum facere rem. Quibusdam dolor soluta ut tempora animi incidunt. Sequi quia ad aut sit.\", \"Veniam ipsa eveniet tempore sed sint voluptas. Magni aut esse sit numquam et. Voluptatem nulla necessitatibus quia magnam impedit. Ad hic quasi ipsa autem voluptatum.\", \"Similique illum doloribus eius laboriosam error. Rerum velit laborum. Sit repellat blanditiis at excepturi molestias. Sit laboriosam quis.\"]",
+        "closing_body": "[\"Aut omnis qui enim amet doloribus labore. Illo culpa aliquid eos rerum aspernatur pariatur aut. Minus sed aut ipsum est ipsa hic.\", \"Vitae vel quia iste ut laudantium corporis veniam. In quam qui voluptatum rerum mollitia. Sit occaecati maiores illum. Autem perferendis consectetur minima dolor quae. Voluptas aut molestiae.\", \"Eum et alias perspiciatis. Odit molestias consequatur ut dolor repellat autem. Illo quia neque sit beatae voluptate.\"]",
         "date_deployed": "2016-03-13",
-        "featured": false
+        "featured": false,
+        "header_image": "/uploads/project/header_image/991/food-01.png"
       },
       "links": {
-        "self": "/projects/14"
+        "self": "/projects/991"
       },
       "relationships": {
         "color_set": {
           "links": {
-            "self": "/projects/14/relationships/color_set",
-            "related": "/projects/14/color_set"
+            "self": "/projects/991/relationships/color_set",
+            "related": "/projects/991/color_set"
           },
           "data": {
             "type": "color-sets",
-            "id": "13"
+            "id": "981"
           }
         },
         "languages": {
           "links": {
-            "self": "/projects/14/relationships/languages",
-            "related": "/projects/14/languages"
+            "self": "/projects/991/relationships/languages",
+            "related": "/projects/991/languages"
           },
           "data": [
             {
               "type": "languages",
-              "id": "23"
+              "id": "1953"
             },
             {
               "type": "languages",
-              "id": "24"
+              "id": "1954"
             }
           ]
         },
         "devices": {
           "links": {
-            "self": "/projects/14/relationships/devices",
-            "related": "/projects/14/devices"
+            "self": "/projects/991/relationships/devices",
+            "related": "/projects/991/devices"
           },
           "data": [
             {
               "type": "devices",
-              "id": "24"
+              "id": "1965"
             },
             {
               "type": "devices",
-              "id": "25"
+              "id": "1966"
             }
           ]
         }
@@ -486,263 +508,517 @@ Response: 200
   ],
   "included": [
     {
-      "id": "9",
+      "id": "977",
       "type": "color-sets",
       "attributes": {
-        "background": "#430d8d",
-        "button": "#19889b",
-        "circle": "#0cf12f"
+        "background": "#7894d7",
+        "button": "#30cf05",
+        "circle": "#055ad2"
       },
       "links": {
-        "self": "/color-sets/9"
+        "self": "/color-sets/977"
       }
     },
     {
-      "id": "15",
+      "id": "1945",
       "type": "languages",
       "attributes": {
-        "title": "didactic"
+        "title": "Cross-group"
       },
       "links": {
-        "self": "/languages/15"
+        "self": "/languages/1945"
       }
     },
     {
-      "id": "16",
+      "id": "1946",
       "type": "languages",
       "attributes": {
-        "title": "uniform"
+        "title": "Seamless"
       },
       "links": {
-        "self": "/languages/16"
+        "self": "/languages/1946"
       }
     },
     {
-      "id": "16",
+      "id": "1957",
       "type": "devices",
       "attributes": {
-        "title": "Multi-layered"
+        "title": "multi-state"
       },
       "links": {
-        "self": "/devices/16"
+        "self": "/devices/1957"
+      },
+      "relationships": {
+        "screenshot": {
+          "links": {
+            "self": "/devices/1957/relationships/screenshot",
+            "related": "/devices/1957/screenshot"
+          }
+        }
       }
     },
     {
-      "id": "17",
+      "id": "1958",
       "type": "devices",
       "attributes": {
-        "title": "dedicated"
+        "title": "Intuitive"
       },
       "links": {
-        "self": "/devices/17"
+        "self": "/devices/1958"
+      },
+      "relationships": {
+        "screenshot": {
+          "links": {
+            "self": "/devices/1958/relationships/screenshot",
+            "related": "/devices/1958/screenshot"
+          }
+        }
       }
     },
     {
-      "id": "10",
+      "id": "978",
       "type": "color-sets",
       "attributes": {
-        "background": "#6231d3",
-        "button": "#a06bca",
-        "circle": "#c0ae86"
+        "background": "#86d973",
+        "button": "#b4aa9a",
+        "circle": "#96ed79"
       },
       "links": {
-        "self": "/color-sets/10"
+        "self": "/color-sets/978"
       }
     },
     {
-      "id": "17",
+      "id": "1947",
       "type": "languages",
       "attributes": {
-        "title": "focus group"
+        "title": "benchmark"
       },
       "links": {
-        "self": "/languages/17"
+        "self": "/languages/1947"
       }
     },
     {
-      "id": "18",
+      "id": "1948",
       "type": "languages",
       "attributes": {
-        "title": "grid-enabled"
+        "title": "5th generation"
       },
       "links": {
-        "self": "/languages/18"
+        "self": "/languages/1948"
       }
     },
     {
-      "id": "18",
+      "id": "1959",
       "type": "devices",
       "attributes": {
-        "title": "Adaptive"
+        "title": "even-keeled"
       },
       "links": {
-        "self": "/devices/18"
+        "self": "/devices/1959"
+      },
+      "relationships": {
+        "screenshot": {
+          "links": {
+            "self": "/devices/1959/relationships/screenshot",
+            "related": "/devices/1959/screenshot"
+          }
+        }
       }
     },
     {
-      "id": "19",
-      "type": "devices",
-      "attributes": {
-        "title": "knowledge user"
-      },
-      "links": {
-        "self": "/devices/19"
-      }
-    },
-    {
-      "id": "11",
-      "type": "color-sets",
-      "attributes": {
-        "background": "#2cd83b",
-        "button": "#b56663",
-        "circle": "#c3569d"
-      },
-      "links": {
-        "self": "/color-sets/11"
-      }
-    },
-    {
-      "id": "19",
-      "type": "languages",
-      "attributes": {
-        "title": "De-engineered"
-      },
-      "links": {
-        "self": "/languages/19"
-      }
-    },
-    {
-      "id": "20",
-      "type": "languages",
-      "attributes": {
-        "title": "Innovative"
-      },
-      "links": {
-        "self": "/languages/20"
-      }
-    },
-    {
-      "id": "20",
+      "id": "1960",
       "type": "devices",
       "attributes": {
         "title": "database"
       },
       "links": {
-        "self": "/devices/20"
-      }
-    },
-    {
-      "id": "21",
-      "type": "devices",
-      "attributes": {
-        "title": "projection"
+        "self": "/devices/1960"
       },
-      "links": {
-        "self": "/devices/21"
+      "relationships": {
+        "screenshot": {
+          "links": {
+            "self": "/devices/1960/relationships/screenshot",
+            "related": "/devices/1960/screenshot"
+          }
+        }
       }
     },
     {
-      "id": "12",
+      "id": "979",
       "type": "color-sets",
       "attributes": {
-        "background": "#c30d36",
-        "button": "#8f37d7",
-        "circle": "#c556ec"
+        "background": "#ddcb65",
+        "button": "#b26a4f",
+        "circle": "#58c12c"
       },
       "links": {
-        "self": "/color-sets/12"
+        "self": "/color-sets/979"
       }
     },
     {
-      "id": "21",
+      "id": "1949",
       "type": "languages",
       "attributes": {
-        "title": "knowledge base"
+        "title": "forecast"
       },
       "links": {
-        "self": "/languages/21"
+        "self": "/languages/1949"
       }
     },
     {
-      "id": "22",
+      "id": "1950",
       "type": "languages",
       "attributes": {
-        "title": "circuit"
+        "title": "Decentralized"
       },
       "links": {
-        "self": "/languages/22"
+        "self": "/languages/1950"
       }
     },
     {
-      "id": "22",
+      "id": "1961",
       "type": "devices",
       "attributes": {
-        "title": "intranet"
+        "title": "systematic"
       },
       "links": {
-        "self": "/devices/22"
+        "self": "/devices/1961"
+      },
+      "relationships": {
+        "screenshot": {
+          "links": {
+            "self": "/devices/1961/relationships/screenshot",
+            "related": "/devices/1961/screenshot"
+          }
+        }
       }
     },
     {
-      "id": "23",
+      "id": "1962",
       "type": "devices",
       "attributes": {
-        "title": "object-oriented"
+        "title": "Switchable"
       },
       "links": {
-        "self": "/devices/23"
+        "self": "/devices/1962"
+      },
+      "relationships": {
+        "screenshot": {
+          "links": {
+            "self": "/devices/1962/relationships/screenshot",
+            "related": "/devices/1962/screenshot"
+          }
+        }
       }
     },
     {
-      "id": "13",
+      "id": "980",
       "type": "color-sets",
       "attributes": {
-        "background": "#e38edc",
-        "button": "#17ef37",
-        "circle": "#700187"
+        "background": "#a9f6d6",
+        "button": "#2f2398",
+        "circle": "#8331d4"
       },
       "links": {
-        "self": "/color-sets/13"
+        "self": "/color-sets/980"
       }
     },
     {
-      "id": "23",
+      "id": "1951",
       "type": "languages",
       "attributes": {
-        "title": "intangible"
+        "title": "help-desk"
       },
       "links": {
-        "self": "/languages/23"
+        "self": "/languages/1951"
       }
     },
     {
-      "id": "24",
+      "id": "1952",
       "type": "languages",
       "attributes": {
-        "title": "responsive"
+        "title": "task-force"
       },
       "links": {
-        "self": "/languages/24"
+        "self": "/languages/1952"
       }
     },
     {
-      "id": "24",
+      "id": "1963",
       "type": "devices",
       "attributes": {
-        "title": "Team-oriented"
+        "title": "Grass-roots"
       },
       "links": {
-        "self": "/devices/24"
+        "self": "/devices/1963"
+      },
+      "relationships": {
+        "screenshot": {
+          "links": {
+            "self": "/devices/1963/relationships/screenshot",
+            "related": "/devices/1963/screenshot"
+          }
+        }
       }
     },
     {
-      "id": "25",
+      "id": "1964",
       "type": "devices",
       "attributes": {
-        "title": "interactive"
+        "title": "web-enabled"
       },
       "links": {
-        "self": "/devices/25"
+        "self": "/devices/1964"
+      },
+      "relationships": {
+        "screenshot": {
+          "links": {
+            "self": "/devices/1964/relationships/screenshot",
+            "related": "/devices/1964/screenshot"
+          }
+        }
+      }
+    },
+    {
+      "id": "981",
+      "type": "color-sets",
+      "attributes": {
+        "background": "#f51158",
+        "button": "#ecff2c",
+        "circle": "#8be3d2"
+      },
+      "links": {
+        "self": "/color-sets/981"
+      }
+    },
+    {
+      "id": "1953",
+      "type": "languages",
+      "attributes": {
+        "title": "value-added"
+      },
+      "links": {
+        "self": "/languages/1953"
+      }
+    },
+    {
+      "id": "1954",
+      "type": "languages",
+      "attributes": {
+        "title": "Optimized"
+      },
+      "links": {
+        "self": "/languages/1954"
+      }
+    },
+    {
+      "id": "1965",
+      "type": "devices",
+      "attributes": {
+        "title": "radical"
+      },
+      "links": {
+        "self": "/devices/1965"
+      },
+      "relationships": {
+        "screenshot": {
+          "links": {
+            "self": "/devices/1965/relationships/screenshot",
+            "related": "/devices/1965/screenshot"
+          }
+        }
+      }
+    },
+    {
+      "id": "1966",
+      "type": "devices",
+      "attributes": {
+        "title": "content-based"
+      },
+      "links": {
+        "self": "/devices/1966"
+      },
+      "relationships": {
+        "screenshot": {
+          "links": {
+            "self": "/devices/1966/relationships/screenshot",
+            "related": "/devices/1966/screenshot"
+          }
+        }
+      }
+    }
+  ]
+}
+```
+#### GET /api/projects/1007
+
+
+| Param | Value |
+| ----- | ----- |
+| id | 1007 |
+
+Response: 200
+```json
+{
+  "data": {
+    "id": "1007",
+    "type": "projects",
+    "attributes": {
+      "github_page_url": "http://murphymurray.net/sammie",
+      "web_page_url": "http://batzmacgyver.biz/eric",
+      "title": "Klein-Adams",
+      "description": "Molestiae quia et illo consequuntur impedit in qui. Pariatur aperiam est illum dolorem illo aut. Nulla corporis dolorem quam et debitis. Dolorem dicta ut impedit. Nobis magnam quaerat sunt aut voluptatem ab.",
+      "opening_body": "[\"Quis quidem voluptatem vel dolorem et. Ipsam debitis velit optio quae voluptas. Natus ut et fugit in voluptatem dignissimos eum. Sed animi impedit ratione suscipit.\", \"Repudiandae occaecati tempora commodi eos voluptatum. Ullam animi aut. Velit odit sapiente sequi. Repudiandae sequi est. Nobis possimus velit culpa perferendis repellat reprehenderit quis.\", \"Nesciunt et eos impedit non voluptas. Illo ea quia et iusto blanditiis dicta. Asperiores neque aut reiciendis. Distinctio vitae quis impedit voluptas doloribus.\"]",
+      "closing_body": "[\"Excepturi at in tenetur quia deleniti. Velit quibusdam ad quia est saepe. Voluptatem velit repudiandae et labore dolores perferendis.\", \"Ea sed suscipit ut. Omnis et velit nulla. Quia optio porro. Ad mollitia et et.\", \"Culpa alias omnis consequatur nostrum veniam quis. Est ipsam iure. Quae voluptates sequi harum. Laudantium cum dolor corrupti totam ut sit tempore.\"]",
+      "date_deployed": "2016-03-13",
+      "featured": false,
+      "header_image": "/uploads/project/header_image/1007/food-01.png"
+    },
+    "links": {
+      "self": "/projects/1007"
+    },
+    "relationships": {
+      "color_set": {
+        "links": {
+          "self": "/projects/1007/relationships/color_set",
+          "related": "/projects/1007/color_set"
+        },
+        "data": {
+          "type": "color-sets",
+          "id": "997"
+        }
+      },
+      "languages": {
+        "links": {
+          "self": "/projects/1007/relationships/languages",
+          "related": "/projects/1007/languages"
+        },
+        "data": [
+          {
+            "type": "languages",
+            "id": "1985"
+          },
+          {
+            "type": "languages",
+            "id": "1986"
+          }
+        ]
+      },
+      "devices": {
+        "links": {
+          "self": "/projects/1007/relationships/devices",
+          "related": "/projects/1007/devices"
+        },
+        "data": [
+          {
+            "type": "devices",
+            "id": "1997"
+          },
+          {
+            "type": "devices",
+            "id": "1998"
+          }
+        ]
+      }
+    }
+  },
+  "included": [
+    {
+      "id": "997",
+      "type": "color-sets",
+      "attributes": {
+        "background": "#61619c",
+        "button": "#f13647",
+        "circle": "#774d1b"
+      },
+      "links": {
+        "self": "/color-sets/997"
+      }
+    },
+    {
+      "id": "1985",
+      "type": "languages",
+      "attributes": {
+        "title": "support"
+      },
+      "links": {
+        "self": "/languages/1985"
+      }
+    },
+    {
+      "id": "1986",
+      "type": "languages",
+      "attributes": {
+        "title": "conglomeration"
+      },
+      "links": {
+        "self": "/languages/1986"
+      }
+    },
+    {
+      "id": "1997",
+      "type": "devices",
+      "attributes": {
+        "title": "Persistent"
+      },
+      "links": {
+        "self": "/devices/1997"
+      },
+      "relationships": {
+        "screenshot": {
+          "links": {
+            "self": "/devices/1997/relationships/screenshot",
+            "related": "/devices/1997/screenshot"
+          },
+          "data": {
+            "type": "screenshots",
+            "id": "1289"
+          }
+        }
+      }
+    },
+    {
+      "id": "1998",
+      "type": "devices",
+      "attributes": {
+        "title": "logistical"
+      },
+      "links": {
+        "self": "/devices/1998"
+      },
+      "relationships": {
+        "screenshot": {
+          "links": {
+            "self": "/devices/1998/relationships/screenshot",
+            "related": "/devices/1998/screenshot"
+          },
+          "data": {
+            "type": "screenshots",
+            "id": "1290"
+          }
+        }
+      }
+    },
+    {
+      "id": "1289",
+      "type": "screenshots",
+      "attributes": {
+        "caption": "Totam aut cupiditate fugiat ut. Rerum placeat nihil eaque. Minima culpa laboriosam quasi blanditiis recusandae non odio. Officia aut ratione occaecati non rerum tempora qui. Aut quia ad repellendus labore et.",
+        "image": "/uploads/screenshot/image/1289/food-01.png"
+      },
+      "links": {
+        "self": "/screenshots/1289"
+      }
+    },
+    {
+      "id": "1290",
+      "type": "screenshots",
+      "attributes": {
+        "caption": "Quia vero error quo voluptatem necessitatibus. Dolor dolorem sed quo quia saepe excepturi. Cumque eligendi error incidunt distinctio quia eius. Aut sed perspiciatis. Veritatis quidem corporis.",
+        "image": "/uploads/screenshot/image/1290/food-01.png"
+      },
+      "links": {
+        "self": "/screenshots/1290"
       }
     }
   ]
