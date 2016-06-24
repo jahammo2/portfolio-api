@@ -8,7 +8,7 @@ gem 'unicorn'
 gem 'carrierwave'
 gem 'jsonapi-serializers'
 gem 'rake', '10.4.2'
-gem 'rack-cors', :require => 'rack/cors'
+gem 'rack-cors', require: 'rack/cors'
 gem 'taperole'
 
 group :test, :development do

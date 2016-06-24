@@ -18,6 +18,7 @@ module ProjectService
     end
 
     private
+
     def build_project
       Project.new(project_attributes)
     end
