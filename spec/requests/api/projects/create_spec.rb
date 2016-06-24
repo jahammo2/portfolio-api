@@ -87,7 +87,8 @@ describe "Project endpoints" do
             closing_body: attributes[:closing_body],
             date_deployed: attributes[:date_deployed].as_json,
             featured: attributes[:featured],
-            header_image: nil
+            header_image: nil,
+            featured_screenshot: nil
           },
           links: {
             self: project_link

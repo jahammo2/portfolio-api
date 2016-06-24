@@ -17,7 +17,8 @@ class ProjectSerializer < BaseSerializer
   has_many :devices
 
   attribute :featured_screenshot do
-    object.devices.where(featured: true).screenshot.image.url
+    featured_device = object.devices.find_by(featured: true)
+    featured_device.screenshot.image.url if featured_device
   end
 
   def format_name(attribute_name)
