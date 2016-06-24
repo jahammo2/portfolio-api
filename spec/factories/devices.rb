@@ -1,6 +1,7 @@
 FactoryGirl.define do
   factory :device do
     title { Faker::Company.buzzword }
+    featured false
 
     after(:create) do |device|
       device.reload

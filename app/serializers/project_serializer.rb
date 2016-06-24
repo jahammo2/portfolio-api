@@ -16,6 +16,10 @@ class ProjectSerializer < BaseSerializer
   has_many :languages
   has_many :devices
 
+  attribute :featured_screenshot do
+    object.devices.where(featured: true).screenshot.image.url
+  end
+
   def format_name(attribute_name)
     attribute_name.to_s.underscore
   end
