@@ -21,7 +21,6 @@ describe "Project endpoints" do
       SmarfDoc.skip
       subject
 
-      featured_screenshot = project.devices.find_by(featured: true).screenshot.image.url
       expect(response_json[:data]).to include(
         id: project.id.to_s,
         type: "projects",

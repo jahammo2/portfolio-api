@@ -9,7 +9,8 @@ class Api::ProjectsController < Api::ApiController
 
   def index
     outcome = ProjectService::Index.run
-    render_service(outcome, is_collection: true, serializer: ProjectsSerializer)
+    included = %w{color_set}
+    render_service(outcome, included: included, is_collection: true, serializer: ProjectsSerializer)
   end
 
   def show

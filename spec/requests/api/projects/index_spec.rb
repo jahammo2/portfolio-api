@@ -45,6 +45,10 @@ describe "Project endpoints" do
         },
         relationships: {
           color_set: {
+            data: {
+              type: "color-sets",
+              id: color_set[:id].to_s,
+            },
             links: {
               self: "#{project_link}/relationships/color_set",
               related: "#{project_link}/color_set"
@@ -70,7 +74,18 @@ describe "Project endpoints" do
       SmarfDoc.skip
       subject
 
-      expect(response_json[:included]).to eq([])
+      expect(response_json[:included]).to include(
+        type: "color-sets",
+        id: color_set.id.to_s,
+        attributes: {
+          background: color_set[:background],
+          button: color_set[:button],
+          circle: color_set[:circle]
+        },
+        links: {
+          self: "/color-sets/#{color_set.id}"
+        }
+      )
     end
 
     it "returns 5 projects" do
