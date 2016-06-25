@@ -3,7 +3,7 @@ require "rails_helper"
 describe "Project endpoints" do
   describe "GET /api/projects/:id" do
     let!(:projects) { create_list(:project, 4, :with_all_properties) }
-    let(:project) { create(:project, :with_all_properties_and_featured_device) }
+    let!(:project) { create(:project, :with_all_properties, featured: true) }
     let(:color_set) { project.color_set }
     let(:languages) { project.languages }
     let(:devices) { project.devices }
@@ -21,7 +21,6 @@ describe "Project endpoints" do
       SmarfDoc.skip
       subject
 
-      featured_screenshot = project.devices.find_by(featured: true).screenshot.image.url
       expect(response_json[:data]).to include(
         id: project.id.to_s,
         type: "projects",
@@ -71,6 +70,10 @@ describe "Project endpoints" do
               {
                 type: "devices",
                 id: devices.first.id.to_s,
+              },
+              {
+                type: "devices",
+                id: devices.last.id.to_s,
               }
             ],
             links: {

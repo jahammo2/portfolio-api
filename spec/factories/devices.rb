@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :device do
-    title { Faker::Company.buzzword }
+    title %w{laptop mobile tablet}.sample
     featured false
 
     after(:create) do |device|

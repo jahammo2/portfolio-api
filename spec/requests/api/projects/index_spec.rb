@@ -3,7 +3,7 @@ require "rails_helper"
 describe "Project endpoints" do
   describe "GET /api/projects" do
     let!(:projects) { create_list(:project, 4, :with_all_properties) }
-    let!(:project) { create(:project, :with_all_properties_and_featured_device) }
+    let!(:project) { create(:project, :with_all_properties, featured: true) }
     let(:color_set) { project.color_set }
     let(:languages) { project.languages }
     let(:devices) { project.devices }
@@ -45,6 +45,10 @@ describe "Project endpoints" do
         },
         relationships: {
           color_set: {
+            data: {
+              type: "color-sets",
+              id: color_set[:id].to_s,
+            },
             links: {
               self: "#{project_link}/relationships/color_set",
               related: "#{project_link}/color_set"
@@ -70,7 +74,18 @@ describe "Project endpoints" do
       SmarfDoc.skip
       subject
 
-      expect(response_json[:included]).to eq([])
+      expect(response_json[:included]).to include(
+        type: "color-sets",
+        id: color_set.id.to_s,
+        attributes: {
+          background: color_set[:background],
+          button: color_set[:button],
+          circle: color_set[:circle]
+        },
+        links: {
+          self: "/color-sets/#{color_set.id}"
+        }
+      )
     end
 
     it "returns 5 projects" do
