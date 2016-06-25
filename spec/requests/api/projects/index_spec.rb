@@ -21,7 +21,7 @@ describe "Project endpoints" do
       SmarfDoc.skip
       subject
 
-      featured_screenshot = project.devices.find_by(featured: true).screenshot.image.url
+      featured_device = project.devices.find_by(featured: true)
       expect(response_json[:data]).to include(
         id: project.id.to_s,
         type: "projects",
@@ -34,46 +34,29 @@ describe "Project endpoints" do
           closing_body: project[:closing_body],
           date_deployed: project[:date_deployed].as_json,
           featured: project[:featured],
-          header_image: project.header_image.url,
-          featured_screenshot: featured_screenshot
+          header_image: nil,
+          featured_screenshot: {
+            device: featured_device.title,
+            image: featured_device.screenshot.image.url
+          }
         },
         links: {
           self: project_link
         },
         relationships: {
           color_set: {
-            data: {
-              type: "color-sets",
-              id: color_set[:id].to_s,
-            },
             links: {
               self: "#{project_link}/relationships/color_set",
               related: "#{project_link}/color_set"
             }
           },
           languages: {
-            data: [
-              {
-                type: "languages",
-                id: languages.first.id.to_s,
-              },
-              {
-                type: "languages",
-                id: languages.last.id.to_s,
-              }
-            ],
             links: {
               self: "#{project_link}/relationships/languages",
               related: "#{project_link}/languages"
             }
           },
           devices: {
-            data: [
-              {
-                type: "devices",
-                id: devices.first.id.to_s,
-              }
-            ],
             links: {
               self: "#{project_link}/relationships/devices",
               related: "#{project_link}/devices"
@@ -87,76 +70,7 @@ describe "Project endpoints" do
       SmarfDoc.skip
       subject
 
-      expect(response_json[:included]).to include(
-        {
-          type: "color-sets",
-          id: color_set.id.to_s,
-          attributes: {
-            background: color_set[:background],
-            button: color_set[:button],
-            circle: color_set[:circle]
-          },
-          links: {
-            self: "/color-sets/#{color_set.id}"
-          }
-        },
-        {
-          type: "languages",
-          id: languages.first.id.to_s,
-          attributes: {
-            title: languages.first[:title],
-          },
-          links: {
-            self: "/languages/#{languages.first.id}"
-          }
-        },
-        {
-          type: "languages",
-          id: languages.last.id.to_s,
-          attributes: {
-            title: languages.last[:title],
-          },
-          links: {
-            self: "/languages/#{languages.last.id}"
-          }
-        },
-        {
-          type: "devices",
-          id: devices.first.id.to_s,
-          attributes: {
-            title: devices.first[:title],
-          },
-          links: {
-            self: "/devices/#{devices.first.id}"
-          },
-          relationships: {
-            screenshot: {
-              links: {
-                self: "/devices/#{devices.first.id}/relationships/screenshot",
-                related: "/devices/#{devices.first.id}/screenshot"
-              }
-            }
-          }
-        },
-        {
-          type: "devices",
-          id: devices.last.id.to_s,
-          attributes: {
-            title: devices.last[:title],
-          },
-          links: {
-            self: "/devices/#{devices.last.id}"
-          },
-          relationships: {
-            screenshot: {
-              links: {
-                self: "/devices/#{devices.last.id}/relationships/screenshot",
-                related: "/devices/#{devices.last.id}/screenshot"
-              }
-            }
-          }
-        }
-      )
+      expect(response_json[:included]).to eq([])
     end
 
     it "returns 5 projects" do

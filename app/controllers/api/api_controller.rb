@@ -15,17 +15,22 @@ class Api::ApiController < ApplicationController
 
   private
 
-  def render_service(outcome, included: [], is_collection: false)
+  def render_service(outcome, included: [], is_collection: false, serializer: nil)
     if outcome.valid?
-      render_service_success_json(outcome, included, is_collection)
+      render_service_success_json(outcome, included, is_collection, serializer)
     else
       render_service_failure_json(outcome)
     end
   end
 
-  def render_service_success_json(outcome, included, is_collection)
+  def render_service_success_json(outcome, included, is_collection, serializer)
     data = outcome.result
-    json = JSONAPI::Serializer.serialize(data, include: included, is_collection: is_collection)
+    options = {}
+    options[:is_collection] = is_collection
+    options[:include] = included
+    options[:serializer] = serializer
+    json = JSONAPI::Serializer.serialize(data, options)
+
     render json: json, status: 200
   end
 
