@@ -23,7 +23,8 @@ describe "Project endpoints" do
               opening_body: Faker::Lorem.paragraph,
               closing_body: Faker::Lorem.paragraph,
               date_deployed: Faker::Date.backward(60),
-              featured: false
+              featured: false,
+              header_image: nil
             },
             relationships: {
               color_set: {
@@ -87,8 +88,7 @@ describe "Project endpoints" do
             closing_body: attributes[:closing_body],
             date_deployed: attributes[:date_deployed].as_json,
             featured: attributes[:featured],
-            header_image: nil,
-            featured_screenshot: nil
+            header_image: nil
           },
           links: {
             self: project_link

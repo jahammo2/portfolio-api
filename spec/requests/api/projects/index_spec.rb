@@ -3,7 +3,7 @@ require "rails_helper"
 describe "Project endpoints" do
   describe "GET /api/projects" do
     let!(:projects) { create_list(:project, 4, :with_all_properties) }
-    let!(:project) { create(:project, :with_all_properties_and_featured_device) }
+    let!(:project) { create(:project, :with_all_properties, featured: true) }
     let(:color_set) { project.color_set }
     let(:languages) { project.languages }
     let(:devices) { project.devices }
