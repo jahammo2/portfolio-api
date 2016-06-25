@@ -9,14 +9,13 @@ class Api::ProjectsController < Api::ApiController
 
   def index
     outcome = ProjectService::Index.run
-    included = %w{color_set languages devices}
-    render_service(outcome, included: included, is_collection: true)
+    render_service(outcome, is_collection: true, serializer: ProjectsSerializer)
   end
 
   def show
     outcome = ProjectService::Show.run(id: params[:id])
     included = %w{color_set languages devices devices.screenshot}
-    render_service(outcome, included: included, is_collection: false)
+    render_service(outcome, included: included)
   end
 
   private

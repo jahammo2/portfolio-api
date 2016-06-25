@@ -34,8 +34,7 @@ describe "Project endpoints" do
           closing_body: project[:closing_body],
           date_deployed: project[:date_deployed].as_json,
           featured: project[:featured],
-          header_image: project.header_image.url,
-          featured_screenshot: featured_screenshot
+          header_image: project.header_image.url
         },
         links: {
           self: project_link
