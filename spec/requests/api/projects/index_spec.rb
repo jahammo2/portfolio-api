@@ -34,7 +34,7 @@ describe "Project endpoints" do
           closing_body: project[:closing_body],
           date_deployed: project[:date_deployed].as_json,
           featured: project[:featured],
-          header_image: nil,
+          header_image: project.header_image.url,
           featured_screenshot: {
             device: featured_device.title,
             image: featured_device.screenshot.image.url

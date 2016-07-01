@@ -35,8 +35,9 @@ FactoryGirl.define do
   trait :with_device do
     after(:create) do |project|
       project.reload
-      FactoryGirl.create(
+      FactoryGirl.create_list(
         :device,
+        4,
         featured: false,
         projects: [project]
       )

@@ -21,6 +21,7 @@ describe "Project endpoints" do
       SmarfDoc.skip
       subject
 
+      featured_device = project.devices.find_by(featured: true)
       expect(response_json[:data]).to include(
         id: project.id.to_s,
         type: "projects",
@@ -70,6 +71,18 @@ describe "Project endpoints" do
               {
                 type: "devices",
                 id: devices.first.id.to_s,
+              },
+              {
+                type: "devices",
+                id: devices.second.id.to_s,
+              },
+              {
+                type: "devices",
+                id: devices.third.id.to_s,
+              },
+              {
+                type: "devices",
+                id: devices.fourth.id.to_s,
               },
               {
                 type: "devices",
