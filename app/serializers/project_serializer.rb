@@ -12,6 +12,10 @@ class ProjectSerializer < BaseSerializer
     object.header_image.try(:url)
   end
 
+  attribute :logo do
+    object.logo.try(:url)
+  end
+
   has_one :color_set
   has_many :languages
   has_many :devices

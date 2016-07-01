@@ -9,6 +9,7 @@ FactoryGirl.define do
     date_deployed "2016-03-13"
     featured false
     header_image { Rack::Test::UploadedFile.new(File.join(Rails.root.join('spec', 'images', 'food-01.png'))) }
+    logo { Rack::Test::UploadedFile.new(File.join(Rails.root.join('spec', 'images', 'food-01.png'))) }
   end
 
   trait :with_color_set do
