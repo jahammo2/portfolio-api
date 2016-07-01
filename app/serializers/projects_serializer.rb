@@ -1,8 +1,4 @@
 class ProjectsSerializer < ProjectSerializer
-  attribute :header_image do
-    nil
-  end
-
   attribute :featured_screenshot do
     featured_device = object.devices.find_by(featured: true)
     title = nil

@@ -73,6 +73,18 @@ describe "Project endpoints" do
               },
               {
                 type: "devices",
+                id: devices.second.id.to_s,
+              },
+              {
+                type: "devices",
+                id: devices.third.id.to_s,
+              },
+              {
+                type: "devices",
+                id: devices.fourth.id.to_s,
+              },
+              {
+                type: "devices",
                 id: devices.last.id.to_s,
               }
             ],
