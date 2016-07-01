@@ -1,5 +1,6 @@
 class Project < ActiveRecord::Base
   mount_uploader :header_image, ImageUploader
+  mount_uploader :logo, ImageUploader
 
   has_and_belongs_to_many :languages
   has_and_belongs_to_many :devices
