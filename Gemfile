@@ -7,9 +7,10 @@ gem 'active_interaction'
 gem 'unicorn'
 gem 'carrierwave'
 gem 'jsonapi-serializers'
-gem 'rake', '10.4.2'
+gem 'rake', '11.1.2'
 gem 'rack-cors', require: 'rack/cors'
 gem 'taperole'
+gem 'activeadmin', github: 'activeadmin'
 
 group :test, :development do
   gem 'shoulda-matchers', '2.8.0'

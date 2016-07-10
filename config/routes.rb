@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  mount_devise_token_auth_for 'Admin', at: 'api/auth'
+  devise_for :admins, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   namespace :api, defaults: { format: :json } do
     resources :projects
   end
