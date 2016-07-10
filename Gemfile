@@ -11,6 +11,7 @@ gem 'rake', '11.1.2'
 gem 'rack-cors', require: 'rack/cors'
 gem 'taperole'
 gem 'activeadmin', github: 'activeadmin'
+gem 'cloudinary'
 
 group :test, :development do
   gem 'shoulda-matchers', '2.8.0'
