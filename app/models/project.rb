@@ -11,7 +11,9 @@ class Project < ActiveRecord::Base
   validates :title, presence: true
   validate :date_deployed_in_past
 
-  accepts_nested_attributes_for :color_set, :languages, :devices
+  accepts_nested_attributes_for :color_set, allow_destroy: true
+  accepts_nested_attributes_for :languages, allow_destroy: true
+  accepts_nested_attributes_for :devices, allow_destroy: true
 
   private
 

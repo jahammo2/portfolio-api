@@ -12,6 +12,7 @@ gem 'rack-cors', require: 'rack/cors'
 gem 'taperole'
 gem 'activeadmin', github: 'activeadmin'
 gem 'cloudinary'
+gem 'formtastic', github: 'justinfrench/formtastic'
 
 group :test, :development do
   gem 'shoulda-matchers', '2.8.0'

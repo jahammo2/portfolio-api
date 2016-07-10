@@ -5,6 +5,7 @@ ActiveAdmin.setup do |config|
   # for each of the active admin pages.
   #
   config.site_title = "Portfolio Api"
+  config.register_javascript 'http://tinymce.cachefly.net/4.0/tinymce.min.js'
 
   # Set the link url for the title. For example, to take
   # users to your main site. Defaults to no link.
@@ -186,7 +187,10 @@ ActiveAdmin.setup do |config|
   # and feel.
   #
   # To load a stylesheet:
-  #   config.register_stylesheet 'my_stylesheet.css'
+
+  #### Work around until I can modify my nginx configs on the prod server ####
+  # config.register_stylesheet 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css'
+  # config.register_stylesheet 'https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.0/bootstrap-table.min.js'
   #
   # You can provide an options hash for more control, which is passed along to stylesheet_link_tag():
   #   config.register_stylesheet 'my_print_stylesheet.css', media: :print

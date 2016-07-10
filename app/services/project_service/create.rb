@@ -6,6 +6,7 @@ module ProjectService
            :description,
            :opening_body,
            :closing_body
+    string :file_data, default: nil
     date :date_deployed
     boolean :featured, default: false
     interface :color_set
@@ -14,8 +15,6 @@ module ProjectService
 
     def execute
       project = build_project
-      #### Temporary. Will use soon. ####
-      # Cloudinary::Uploader.upload(file_data || image) if file_data || image
       validate_and_save(project)
     end
 
