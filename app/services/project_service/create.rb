@@ -14,8 +14,6 @@ module ProjectService
 
     def execute
       project = build_project
-      #### Temporary. Will use soon. ####
-      # Cloudinary::Uploader.upload(file_data || image) if file_data || image
       validate_and_save(project)
     end
 
