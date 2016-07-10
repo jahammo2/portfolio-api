@@ -37,6 +37,7 @@ ActiveAdmin.register Project do
       f.input :header_image
       f.input :logo
     end
+
     f.inputs do
       f.has_many :color_set, allow_destroy: true do |color_set|
         color_set.input :background
@@ -44,21 +45,25 @@ ActiveAdmin.register Project do
         color_set.input :circle
       end
     end
+
     f.inputs do
       f.has_many :languages, allow_destroy: true do |language|
         language.input :title
       end
     end
+
     f.inputs do
       f.has_many :devices, allow_destroy: true do |device|
         device.input :title
         device.input :featured
+
         device.has_many :screenshot, allow_destroy: true do |screenshot|
           screenshot.input :caption
           screenshot.input :image
         end
       end
     end
+
     f.actions
   end
 end
