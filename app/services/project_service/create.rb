@@ -6,7 +6,6 @@ module ProjectService
            :description,
            :opening_body,
            :closing_body
-    string :file_data, default: nil
     date :date_deployed
     boolean :featured, default: false
     interface :color_set
