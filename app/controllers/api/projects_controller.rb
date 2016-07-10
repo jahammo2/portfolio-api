@@ -1,12 +1,6 @@
 class Api::ProjectsController < Api::ApiController
   before_action :validate_params_exist!, only: [:create]
 
-  def create
-    outcome = ProjectService::Create.run(create_inputs)
-    included = %w{color_set languages devices}
-    render_service(outcome, included: included)
-  end
-
   def index
     outcome = ProjectService::Index.run
     included = %w{color_set}

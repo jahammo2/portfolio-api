@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   namespace :api, defaults: { format: :json } do
     resources :projects
+    resources :social_links, path: '/social-links'
   end
 end

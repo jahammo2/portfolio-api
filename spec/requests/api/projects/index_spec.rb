@@ -35,6 +35,7 @@ describe "Project endpoints" do
           date_deployed: project[:date_deployed].as_json,
           featured: project[:featured],
           header_image: project.header_image.url,
+          logo: project.logo.url,
           featured_screenshot: {
             device: featured_device.title,
             image: featured_device.screenshot.image.url
