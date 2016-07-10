@@ -54,7 +54,7 @@ ActiveAdmin.register Project do
 
     f.inputs do
       f.has_many :devices, allow_destroy: true do |device|
-        device.input :title
+        device.input :title, as: :select, collection: ['desktop', 'tablet', 'mobile']
         device.input :featured
 
         device.has_many :screenshot, allow_destroy: true do |screenshot|

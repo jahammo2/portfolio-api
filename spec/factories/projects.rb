@@ -56,6 +56,13 @@ FactoryGirl.define do
     end
   end
 
+  trait :with_all_properties_but_no_images do
+    with_languages
+    with_device_but_no_images
+    with_featured_device
+    with_color_set
+  end
+
   trait :with_all_properties do
     with_languages
     with_device
