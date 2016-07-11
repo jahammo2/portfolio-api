@@ -1,5 +1,5 @@
 class ImageUploader < CarrierWave::Uploader::Base
-  if Rails.env.in? %w(development test)
+  if Rails.env.in? %w(test)
     storage :file
 
     def store_dir
