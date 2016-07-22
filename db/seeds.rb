@@ -7,6 +7,7 @@ if Rails.env.in? %w(development test)
   FactoryGirl.create(:social_link, site: 'twitter')
   FactoryGirl.create(:social_link, site: 'instagram')
   FactoryGirl.create(:social_link, site: 'github')
+  FactoryGirl.create(:bio)
   Admin.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')
 end
 
