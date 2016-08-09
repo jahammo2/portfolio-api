@@ -21,6 +21,7 @@ describe "Bio endpoints" do
         type: "bios",
         attributes: {
           body: bio[:body],
+          title: bio[:title],
           email: bio[:email],
           resume: bio.resume.url,
           phone_number: bio[:phone_number],

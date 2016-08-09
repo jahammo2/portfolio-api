@@ -1,6 +1,7 @@
 FactoryGirl.define do
   factory :bio do
     body { Faker::Lorem.paragraph }
+    title { Faker::Lorem.sentence }
     email { Faker::Internet.email }
     phone_number { Faker::PhoneNumber.phone_number }
     name { Faker::Company.name }
