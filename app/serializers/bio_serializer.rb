@@ -1,5 +1,6 @@
 class BioSerializer < BaseSerializer
   attributes :body,
+             :title,
              :email,
              :phone_number,
              :name
