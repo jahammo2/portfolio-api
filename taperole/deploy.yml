@@ -8,9 +8,9 @@
   user: "{{ deployer_user.name }}"
 
   roles:
-    # - backend_checkout
-    # - backend_config
-    # - database_load
-    # - unicorn_activate
+    - backend_checkout
+    - backend_config
+    - database_load
+    - unicorn_activate
     - frontend_deploy
     # - delayed_job
