@@ -9,19 +9,25 @@ ActiveAdmin.register Project do
                 :featured,
                 :header_image,
                 :logo,
-                languages_attributes: [:title],
+                languages_attributes: [:id, :title, :_destroy],
                 devices_attributes: [
+                  :id,
                   :title,
                   :featured,
+                  :_destroy,
                   screenshot_attributes: [
+                    :id,
                     :caption,
-                    :image
+                    :image,
+                    :_destroy
                   ]
                 ],
                 color_set_attributes: [
+                  :id,
                   :background,
                   :button,
-                  :circle
+                  :circle,
+                  :_destroy
                 ]
 
   form do |f|
