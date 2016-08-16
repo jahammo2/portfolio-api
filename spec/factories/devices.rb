@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :device do
-    title { %w{laptop mobile tablet}.sample }
+    title { %w{desktop mobile}.sample }
     featured false
 
     after(:create) do |device|
@@ -13,7 +13,7 @@ FactoryGirl.define do
   end
 
   factory :device_without_screenshots do
-    title { %w{laptop mobile tablet}.sample }
+    title { %w{desktop mobile}.sample }
     featured false
 
     after(:create) do |device|
