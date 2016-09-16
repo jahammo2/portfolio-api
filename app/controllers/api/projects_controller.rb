@@ -32,7 +32,9 @@ class Api::ProjectsController < Api::ApiController
           data: [
             :background,
             :button,
-            :circle
+            :circle,
+            :logo_background,
+            :logo_title
           ]
         ],
         languages: [

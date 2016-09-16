@@ -27,6 +27,8 @@ ActiveAdmin.register Project do
                   :background,
                   :button,
                   :circle,
+                  :logo_background,
+                  :logo_title,
                   :_destroy
                 ]
 
@@ -49,6 +51,8 @@ ActiveAdmin.register Project do
         color_set.input :background
         color_set.input :button
         color_set.input :circle
+        color_set.input :logo_background
+        color_set.input :logo_title
       end
     end
 
