@@ -3,5 +3,8 @@ class ColorSetSerializer < BaseSerializer
              :button,
              :circle,
              :logo_background,
-             :logo_title
+             :logo_title,
+             :button_text,
+             :button_hover,
+             :text
 end
