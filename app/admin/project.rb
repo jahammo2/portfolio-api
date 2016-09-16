@@ -27,6 +27,11 @@ ActiveAdmin.register Project do
                   :background,
                   :button,
                   :circle,
+                  :logo_background,
+                  :logo_title,
+                  :button_text,
+                  :button_hover,
+                  :text,
                   :_destroy
                 ]
 
@@ -47,8 +52,13 @@ ActiveAdmin.register Project do
     f.inputs do
       f.has_many :color_set, allow_destroy: true do |color_set|
         color_set.input :background
-        color_set.input :button
         color_set.input :circle
+        color_set.input :text
+        color_set.input :logo_background
+        color_set.input :logo_title
+        color_set.input :button
+        color_set.input :button_text
+        color_set.input :button_hover
       end
     end
 

@@ -81,7 +81,12 @@ describe "Project endpoints" do
         attributes: {
           background: color_set[:background],
           button: color_set[:button],
-          circle: color_set[:circle]
+          circle: color_set[:circle],
+          logo_background: color_set[:logo_background],
+          logo_title: color_set[:logo_title],
+          button_text: color_set[:button_text],
+          button_hover: color_set[:button_hover],
+          text: color_set[:text]
         },
         links: {
           self: "/color-sets/#{color_set.id}"

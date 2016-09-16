@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160805202239) do
+ActiveRecord::Schema.define(version: 20160916212210) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -78,8 +78,13 @@ ActiveRecord::Schema.define(version: 20160805202239) do
     t.string   "button"
     t.string   "circle"
     t.integer  "project_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.string   "logo_background"
+    t.string   "logo_title"
+    t.string   "button_text"
+    t.string   "button_hover"
+    t.string   "text"
   end
 
   add_index "color_sets", ["project_id"], name: "index_color_sets_on_project_id", using: :btree
