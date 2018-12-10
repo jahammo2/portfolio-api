@@ -2,6 +2,8 @@
 
 **API endpoint docs** can be found [here](./API_docs.md)
 
+## Local development
+
 ## Renewing SSL cert
 
 ### If it has not expired yet
