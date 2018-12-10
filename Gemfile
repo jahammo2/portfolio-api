@@ -9,7 +9,7 @@ gem 'carrierwave'
 gem 'jsonapi-serializers'
 gem 'rake', '11.2.2'
 gem 'rack-cors', require: 'rack/cors'
-gem 'taperole'
+gem 'taperole', '1.5.5'
 gem 'activeadmin', github: 'activeadmin'
 gem 'cloudinary'
 
