@@ -27,11 +27,11 @@ describe "Bio endpoints" do
           phone_number: bio[:phone_number],
           name: bio[:name],
           background_image: bio.background_image.url,
-          profile_picture: bio.profile_picture.url
+          profile_picture: bio.profile_picture.url,
         },
         links: {
-          self: "/bios/#{bio.id}"
-        }
+          self: "/bios/#{bio.id}",
+        },
       )
     end
   end

@@ -34,10 +34,10 @@ describe "Project endpoints" do
           date_deployed: project[:date_deployed].as_json,
           featured: project[:featured],
           header_image: project.header_image.url,
-          logo: project.logo.url
+          logo: project.logo.url,
         },
         links: {
-          self: project_link
+          self: project_link,
         },
         relationships: {
           color_set: {
@@ -47,8 +47,8 @@ describe "Project endpoints" do
             },
             links: {
               self: "#{project_link}/relationships/color_set",
-              related: "#{project_link}/color_set"
-            }
+              related: "#{project_link}/color_set",
+            },
           },
           languages: {
             data: [
@@ -59,12 +59,12 @@ describe "Project endpoints" do
               {
                 type: "languages",
                 id: languages.last.id.to_s,
-              }
+              },
             ],
             links: {
               self: "#{project_link}/relationships/languages",
-              related: "#{project_link}/languages"
-            }
+              related: "#{project_link}/languages",
+            },
           },
           devices: {
             data: [
@@ -87,14 +87,14 @@ describe "Project endpoints" do
               {
                 type: "devices",
                 id: devices.last.id.to_s,
-              }
+              },
             ],
             links: {
               self: "#{project_link}/relationships/devices",
-              related: "#{project_link}/devices"
-            }
-          }
-        }
+              related: "#{project_link}/devices",
+            },
+          },
+        },
       )
     end
 
@@ -106,7 +106,8 @@ describe "Project endpoints" do
       last_device_link = "/devices/#{devices.last.id}"
       first_screenshot = devices.first.screenshot
       last_screenshot = devices.last.screenshot
-      expect(response_json[:included]).to include(
+
+      inclusions = [
         {
           type: "color-sets",
           id: color_set.id.to_s,
@@ -118,11 +119,11 @@ describe "Project endpoints" do
             logo_title: color_set[:logo_title],
             button_text: color_set[:button_text],
             button_hover: color_set[:button_hover],
-            text: color_set[:text]
+            text: color_set[:text],
           },
           links: {
-            self: "/color-sets/#{color_set.id}"
-          }
+            self: "/color-sets/#{color_set.id}",
+          },
         },
         {
           type: "languages",
@@ -131,8 +132,8 @@ describe "Project endpoints" do
             title: languages.first[:title],
           },
           links: {
-            self: "/languages/#{languages.first.id}"
-          }
+            self: "/languages/#{languages.first.id}",
+          },
         },
         {
           type: "languages",
@@ -141,8 +142,8 @@ describe "Project endpoints" do
             title: languages.last[:title],
           },
           links: {
-            self: "/languages/#{languages.last.id}"
-          }
+            self: "/languages/#{languages.last.id}",
+          },
         },
         {
           type: "devices",
@@ -151,20 +152,20 @@ describe "Project endpoints" do
             title: devices.first[:title],
           },
           links: {
-            self: first_device_link
+            self: first_device_link,
           },
           relationships: {
             screenshot: {
               links: {
                 self: "#{first_device_link}/relationships/screenshot",
-                related: "#{first_device_link}/screenshot"
+                related: "#{first_device_link}/screenshot",
               },
               data: {
                 type: "screenshots",
-                id: first_screenshot.id.to_s
-              }
-            }
-          }
+                id: first_screenshot.id.to_s,
+              },
+            },
+          },
         },
         {
           type: "devices",
@@ -173,44 +174,48 @@ describe "Project endpoints" do
             title: devices.last[:title],
           },
           links: {
-            self: "/devices/#{devices.last.id}"
+            self: "/devices/#{devices.last.id}",
           },
           relationships: {
             screenshot: {
               links: {
                 self: "#{last_device_link}/relationships/screenshot",
-                related: "#{last_device_link}/screenshot"
+                related: "#{last_device_link}/screenshot",
               },
               data: {
                 type: "screenshots",
-                id: last_screenshot.id.to_s
-              }
-            }
-          }
+                id: last_screenshot.id.to_s,
+              },
+            },
+          },
         },
         {
           type: "screenshots",
           id: first_screenshot.id.to_s,
           attributes: {
             caption: first_screenshot.caption,
-            image: first_screenshot.image.url
+            image: first_screenshot.image.url,
           },
           links: {
-            self: "/screenshots/#{first_screenshot.id}"
-          }
+            self: "/screenshots/#{first_screenshot.id}",
+          },
         },
         {
           type: "screenshots",
           id: last_screenshot.id.to_s,
           attributes: {
             caption: last_screenshot.caption,
-            image: last_screenshot.image.url
+            image: last_screenshot.image.url,
           },
           links: {
-            self: "/screenshots/#{last_screenshot.id}"
-          }
-        }
-      )
+            self: "/screenshots/#{last_screenshot.id}",
+          },
+        },
+      ]
+
+      inclusions.each do |inclusion|
+        expect(response_json[:included]).to include(inclusion)
+      end
     end
   end
 end

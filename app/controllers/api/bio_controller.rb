@@ -1,6 +1,8 @@
-class Api::BioController < Api::ApiController
-  def show
-    outcome = BioService::Show.run
-    render_service(outcome)
+module Api
+  class BioController < ApiController
+    def show
+      outcome = BioService::Show.run
+      render_service(outcome)
+    end
   end
 end

@@ -8,7 +8,7 @@ class ServiceBase < ActiveInteraction::Base
       {
         status: "422",
         title: "Validation Failed",
-        detail: "#{key.to_s.titleize} #{value}"
+        detail: "#{key.to_s.titleize} #{value}",
       }
     end
   end

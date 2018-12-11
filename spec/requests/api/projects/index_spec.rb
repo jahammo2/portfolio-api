@@ -38,11 +38,11 @@ describe "Project endpoints" do
           logo: project.logo.url,
           featured_screenshot: {
             device: featured_device.title,
-            image: featured_device.screenshot.image.url
-          }
+            image: featured_device.screenshot.image.url,
+          },
         },
         links: {
-          self: project_link
+          self: project_link,
         },
         relationships: {
           color_set: {
@@ -52,22 +52,22 @@ describe "Project endpoints" do
             },
             links: {
               self: "#{project_link}/relationships/color_set",
-              related: "#{project_link}/color_set"
-            }
+              related: "#{project_link}/color_set",
+            },
           },
           languages: {
             links: {
               self: "#{project_link}/relationships/languages",
-              related: "#{project_link}/languages"
-            }
+              related: "#{project_link}/languages",
+            },
           },
           devices: {
             links: {
               self: "#{project_link}/relationships/devices",
-              related: "#{project_link}/devices"
-            }
-          }
-        }
+              related: "#{project_link}/devices",
+            },
+          },
+        },
       )
     end
 
@@ -86,11 +86,11 @@ describe "Project endpoints" do
           logo_title: color_set[:logo_title],
           button_text: color_set[:button_text],
           button_hover: color_set[:button_hover],
-          text: color_set[:text]
+          text: color_set[:text],
         },
         links: {
-          self: "/color-sets/#{color_set.id}"
-        }
+          self: "/color-sets/#{color_set.id}",
+        },
       )
     end
 

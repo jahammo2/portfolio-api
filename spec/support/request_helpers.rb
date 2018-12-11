@@ -1,7 +1,8 @@
 module Request
   module JsonHelpers
     def response_json
-      @json_response ||= HashWithIndifferentAccess.new(JSON.parse(response.body))
+      body = JSON.parse(response.body)
+      @response_json ||= HashWithIndifferentAccess.new(body)
     end
   end
 end

@@ -11,7 +11,7 @@ class ProjectsSerializer < ProjectSerializer
 
     {
       device: title,
-      image: url
+      image: url,
     }
   end
 end

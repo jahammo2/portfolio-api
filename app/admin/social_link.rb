@@ -3,8 +3,10 @@ ActiveAdmin.register SocialLink do
                 :url
 
   form do |f|
+    collection = %w{github instagram linkedin twitter}
+
     f.inputs do
-      f.input :site, as: :select, collection: %w{github instagram linkedin twitter}
+      f.input :site, as: :select, collection: collection
       f.input :url
     end
 
