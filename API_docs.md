@@ -22,7 +22,7 @@ Response: 401
 
 | Param | Value |
 | ----- | ----- |
-| data | {"type"=>"projects", "attributes"=>{"github_page_url"=>"http://schaeferlittel.name/jacinthe_reinger", "web_page_url"=>"http://cummeratatrantow.co/sandrine.kertzmann", "title"=>"1080p", "description"=>"navigating the array won"t do anything, we need to bypass the multi-byte AI transmitter!", "opening_body"=>"Sit a magnam est voluptatibus qui eos molestias. Et ducimus voluptatem aliquid aut aut dolores enim. Dolores illo sit voluptas ea. Rem rerum et dolor blanditiis tenetur ut. Libero pariatur officiis quo autem.", "closing_body"=>"Aut deleniti dolores est explicabo qui accusantium. Et error sapiente in tempore. Nostrum nobis fuga sapiente ea corrupti repellendus voluptatum.", "date_deployed"=>"2016-05-04", "featured"=>"false"}, "relationships"=>{"color_set"=>{"data"=>{"background"=>"#3339d9", "button"=>"magenta", "circle"=>"#9b4a0e"}}, "languages"=>{"data"=>[{"title"=>"hard drive"}, {"title"=>"protocol"}]}, "devices"=>{"data"=>[{"title"=>"sensor"}, {"title"=>"matrix"}]}}} |
+| data | {"type"=>"projects", "attributes"=>{"github_page_url"=>"http://schaeferlittel.name/jacinthe_reinger", "web_page_url"=>"http://cummeratatrantow.co/sandrine.kertzmann", "title"=>"1080p", "description"=>"navigating the array won't do anything, we need to bypass the multi-byte AI transmitter!", "opening_body"=>"Sit a magnam est voluptatibus qui eos molestias. Et ducimus voluptatem aliquid aut aut dolores enim. Dolores illo sit voluptas ea. Rem rerum et dolor blanditiis tenetur ut. Libero pariatur officiis quo autem.", "closing_body"=>"Aut deleniti dolores est explicabo qui accusantium. Et error sapiente in tempore. Nostrum nobis fuga sapiente ea corrupti repellendus voluptatum.", "date_deployed"=>"2016-05-04", "featured"=>"false"}, "relationships"=>{"color_set"=>{"data"=>{"background"=>"#3339d9", "button"=>"magenta", "circle"=>"#9b4a0e"}}, "languages"=>{"data"=>[{"title"=>"hard drive"}, {"title"=>"protocol"}]}, "devices"=>{"data"=>[{"title"=>"sensor"}, {"title"=>"matrix"}]}}} |
 
 Response: 200
 ```json
@@ -34,7 +34,7 @@ Response: 200
       "github_page_url": "http://schaeferlittel.name/jacinthe_reinger",
       "web_page_url": "http://cummeratatrantow.co/sandrine.kertzmann",
       "title": "1080p",
-      "description": "navigating the array won"t do anything, we need to bypass the multi-byte AI transmitter!",
+      "description": "navigating the array won't do anything, we need to bypass the multi-byte AI transmitter!",
       "opening_body": "Sit a magnam est voluptatibus qui eos molestias. Et ducimus voluptatem aliquid aut aut dolores enim. Dolores illo sit voluptas ea. Rem rerum et dolor blanditiis tenetur ut. Libero pariatur officiis quo autem.",
       "closing_body": "Aut deleniti dolores est explicabo qui accusantium. Et error sapiente in tempore. Nostrum nobis fuga sapiente ea corrupti repellendus voluptatum.",
       "date_deployed": "2016-05-04",
