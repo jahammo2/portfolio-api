@@ -1,7 +1,12 @@
-FactoryGirl.define do
+require_relative "./helpers/file_upload"
+
+include Helpers::FileUpload # rubocop:disable Style/MixinUsage
+
+FactoryBot.define do
   factory :screenshot do
     caption { Faker::Lorem.paragraph }
-    image { Rack::Test::UploadedFile.new(File.join(Rails.root.join('spec', 'images', 'food-01.png'))) }
     device
+
+    image { get_uploaded_file("spec", "images", "food-01.png") }
   end
 end

@@ -1,3 +1,4 @@
+# rubocop:disable Metrics/BlockLength
 ActiveAdmin.register Project do
   permit_params :github_page_url,
                 :web_page_url,
@@ -9,34 +10,34 @@ ActiveAdmin.register Project do
                 :featured,
                 :header_image,
                 :logo,
-                languages_attributes: [:id, :title, :_destroy],
+                languages_attributes: %i{id title _destroy},
                 devices_attributes: [
                   :id,
                   :title,
                   :featured,
                   :_destroy,
-                  screenshot_attributes: [
-                    :id,
-                    :caption,
-                    :image,
-                    :_destroy
-                  ]
+                  screenshot_attributes: %i{
+                    id
+                    caption
+                    image
+                    _destroy
+                  },
                 ],
-                color_set_attributes: [
-                  :id,
-                  :background,
-                  :button,
-                  :circle,
-                  :logo_background,
-                  :logo_title,
-                  :button_text,
-                  :button_hover,
-                  :text,
-                  :_destroy
-                ]
+                color_set_attributes: %i{
+                  id
+                  background
+                  button
+                  circle
+                  logo_background
+                  logo_title
+                  button_text
+                  button_hover
+                  text
+                  _destroy
+                }
 
   form do |f|
-    f.inputs 'Base Information' do
+    f.inputs "Base Information" do
       f.input :github_page_url
       f.input :web_page_url
       f.input :title
@@ -69,8 +70,10 @@ ActiveAdmin.register Project do
     end
 
     f.inputs do
+      collection = ["desktop", "tablet", "mobile"]
+
       f.has_many :devices, allow_destroy: true do |device|
-        device.input :title, as: :select, collection: ['desktop', 'tablet', 'mobile']
+        device.input :title, as: :select, collection: collection
         device.input :featured
 
         device.has_many :screenshot, allow_destroy: true do |screenshot|
@@ -83,3 +86,4 @@ ActiveAdmin.register Project do
     f.actions
   end
 end
+# rubocop:enable Metrics/BlockLength

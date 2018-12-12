@@ -21,11 +21,11 @@ describe "SocialLink endpoints" do
         type: "social-links",
         attributes: {
           site: social_link[:site],
-          url: social_link[:url]
+          url: social_link[:url],
         },
         links: {
-          self: "/social-links/#{social_link.id}"
-        }
+          self: "/social-links/#{social_link.id}",
+        },
       )
     end
   end

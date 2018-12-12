@@ -1,4 +1,4 @@
-require 'jsonapi-serializers'
+require "jsonapi-serializers"
 
 class BaseSerializer
   include JSONAPI::Serializer
