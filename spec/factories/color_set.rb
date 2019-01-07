@@ -8,6 +8,6 @@ FactoryBot.define do
     button_text { Faker::Color.hex_color }
     button_hover { Faker::Color.hex_color }
     text { Faker::Color.hex_color }
-    project_id { 1 }
+    project
   end
 end

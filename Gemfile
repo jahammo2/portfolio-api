@@ -9,6 +9,7 @@ gem "jsonapi-serializers"
 gem "pg"
 gem "rails", "5.2.2"
 gem "rake"
+gem 'thin'
 gem "unicorn"
 
 group :test, :development do
