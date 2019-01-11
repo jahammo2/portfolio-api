@@ -1,10 +1,46 @@
 app_name: portfolio
 
-# Rails App Configs
-be_app_repo: git@github.com:jahammo2/portfolio-api.git
+letsencrypt:
+  enabled: true
+  hostname: locallyit.works
+  email: jahammo2@gmail.com
 
-fe_app_repo: git@github.com:jahammo2/portfolio-web_client.git
+# Rails App Configs
+be_app_repo: https://github.com/jahammo2/portfolio-api
+
+# HTML/JS App Configs
+# Uncomment if you want to deploy a JS/HTML App
+fe_app_repo: https://github.com/jahammo2/portfolio-web_client
+fe_app_branch: master
 fe_build_command: npm run build-prod
 
-dev_key_files:
-  - dev_keys/jordan_rsa.pub
+slack_webhook_url:
+
+logrotate_scripts:
+  - name: rails
+    path: "{{be_app_path}}/log/*.log"
+    options:
+      - daily
+      - rotate 30
+      - missingok
+      - compress
+      - delaycompress
+      - copytruncate
+
+## Configure Postgresql Backups
+## Uncomment the following to enabled backups
+#
+## Store Backups on S3 or seperate server via rsync
+# S3
+# backup_dir: s3+http://[aws_access_key:aws_secret_access_key]@bucket_name[/folder]
+# Rsync
+# backup_dir: s3+http://[aws_access_key:aws_secret_access_key]@bucket_name[/folder]
+#
+## Which Servers are backed up
+# backup_hosts:
+#   - production
+#   - staging
+#   - qa
+#
+## Set Backup Schedule
+# backup_schedule: "* */4 * * *"
