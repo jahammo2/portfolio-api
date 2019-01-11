@@ -1,4 +1,4 @@
-class CreateDevicesProjects < ActiveRecord::Migration
+class CreateDevicesProjects < ActiveRecord::Migration[5.2]
   def change
     create_table :devices_projects do |t|
       t.references :device, index: true, foreign_key: true

@@ -7,9 +7,11 @@ gem "cloudinary"
 gem "devise_token_auth"
 gem "jsonapi-serializers"
 gem "pg"
+gem "puma"
 gem "rails", "5.2.2"
 gem "rake"
-gem 'thin'
+gem "taperole", "2.1.1"
+gem "thin"
 gem "unicorn"
 
 group :test, :development do
