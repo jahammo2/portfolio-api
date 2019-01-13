@@ -10,7 +10,7 @@ FactoryBot.define do
     opening_body { Faker::Lorem.paragraphs }
     closing_body { Faker::Lorem.paragraphs }
     description { Faker::Lorem.paragraph }
-    date_deployed { "2016-03-13" }
+    date_deployed { Faker::Date.between(2.years.ago, Date.today) }
     featured { false }
     header_image { get_uploaded_file("spec", "images", "food-01.png") }
     logo { get_uploaded_file("spec", "images", "food-01.png") }
@@ -60,9 +60,8 @@ FactoryBot.define do
     end
   end
 
-  trait :with_all_properties_but_no_images do
+  trait :with_all_properties_but_no_secondary_devices do
     with_languages
-    with_device_but_no_images
     with_featured_device
     with_color_set
   end
