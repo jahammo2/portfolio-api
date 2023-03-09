@@ -5,14 +5,18 @@
     - "{{tape_dir}}/vars/defaults.yml"
     - tape_vars.yml
 
-  user: "{{ deployer_user.name }}"
+  # user: "{{ deployer_user.name }}"
+  user: root
 
   roles:
     # - dev_keys
-    - backend_checkout
-    - backend_config
-    - database_load
+    - install_monit
+    - install_puma
+    # - backend_checkout
+    # - backend_config
+    # - database_load
+    # - nginx
     - puma_activate
-    - frontend_deploy
+    # - frontend_deploy
     # - delayed_job
     # - whenever

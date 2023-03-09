@@ -1,0 +1,3 @@
+- name: Register npm executable
+  command: bash -lc "which npm"
+  register: npm_path

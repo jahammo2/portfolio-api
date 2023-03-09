@@ -1,0 +1,28 @@
+# - name: Set up db config
+#   template: src=database.yml.j2 dest={{be_app_path}}/config/database.yml
+#
+# # zzet.rbenv puts all the rbenv stuff in profile for some reason
+# # so we gotta use login shells to do this stuff
+# - name: Install bundle gems
+#   remote_user: root
+#   command: chdir={{ be_app_path }}
+#            bash -lc "RAILS_ENV={{be_app_env}} bundle install
+#            --without test development --no-binstubs --deployment"
+#
+# - name: Ensure secrets.yml file present
+#   stat: path={{ be_app_path }}/config/secrets.yml
+#   register: secrets_file
+#
+# - name: Ask for secrets.yml
+#   debug: msg="You've got to upload secrets.yml to {{be_app_path}}/config to continue"
+#   when: secrets_file.stat.exists != true
+#
+# - name: Wait one day for secrets.yml to get put on the server
+#   wait_for: path={{be_app_path}}/config/secrets.yml state=present timeout=86400
+#   when: secrets_file.stat.exists != true
+
+- name: Precompile Assets
+  remote_user: root
+  command: chdir={{ be_app_path }}
+           bash -lc "bundle exec rake assets:precompile RAILS_ENV=production"
+  when: precompile_assets

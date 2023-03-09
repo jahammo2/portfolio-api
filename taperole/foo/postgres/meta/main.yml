@@ -1,0 +1,17 @@
+---
+dependencies:
+  - role: lxhunter.apt
+  - role: ANXS.postgresql
+    postgresql_databases:
+      - name: "{{ app_name }}_{{ be_app_env }}"
+    postgresql_users:
+      - name: deployer
+        pass: "{{ database_password }}"
+        encrypted: yes
+    postgresql_user_privileges:
+      - name: deployer
+        db: "{{ app_name }}_{{ be_app_env }}"
+        role_attr_flags: CREATEDB,LOGIN,REPLICATION,SUPERUSER
+    postgresql_ext_install_dev_headers: yes
+  - role: Stouts.backup
+    when: group_names[0] in backup_hosts # Allows user to pick which hosts have backups enabled (defaults to production)

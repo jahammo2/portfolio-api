@@ -8,6 +8,12 @@ letsencrypt:
 # Rails App Configs
 be_app_repo: https://github.com/jahammo2/portfolio-api
 
+deployer_user:
+  name: root
+  groups:
+    - deployer
+    - staff
+
 # HTML/JS App Configs
 # Uncomment if you want to deploy a JS/HTML App
 fe_app_repo: https://github.com/jahammo2/portfolio-web_client

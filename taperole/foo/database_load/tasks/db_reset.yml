@@ -1,0 +1,17 @@
+- name: Confirm Reset
+  pause: prompt='About to destroy and reseed the database. Press any key to continue or Ctrl+c and then "a" to abort'
+
+- name: Stop all Services
+  command: bash -lc "sudo monit stop all"
+
+- name: Reset DB
+  command: chdir={{ be_app_path }}
+           bash -lc "bundle exec rake db:drop db:setup RAILS_ENV={{be_app_env}}"
+  register: db_reset
+
+- name: DB Reset Failed
+  fail: msg="{{db_reset.stderr}}"
+  when: db_reset.stderr
+
+- name: Restart Services
+  command: bash -lc "sudo monit start all"

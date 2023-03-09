@@ -1,0 +1,2 @@
+rake:
+  force_migrate: false

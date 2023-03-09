@@ -1,0 +1,21 @@
+- name: Install letsencrypt
+  command: bash -lc "git clone https://github.com/letsencrypt/letsencrypt /opt/letsencrypt"
+  args:
+    creates: /opt/letsencrypt
+  when: letsencrypt.enabled == true
+
+- name: Get letsencrypt cert
+  command: bash -lc "/opt/letsencrypt/letsencrypt-auto certonly --standalone --rsa-key-size 4096 --force-renew --agree-tos --email {{ letsencrypt.email }} --text --non-interactive -d {{ letsencrypt.hostname }}"
+  args:
+    creates: "/etc/letsencrypt/live/{{ letsencrypt.hostname }}/privkey.pem"
+  when: letsencrypt.enabled == true
+
+- name: Set cert to renew every monday at 2:30 am
+  cron:
+    name: Certbot renew
+    weekday: 1
+    hour: 2
+    minute: 30
+    job: /opt/letsencrypt/letsencrypt-auto renew --rsa-key-size 4096 --pre-hook "/usr/bin/monit stop nginx" --post-hook "/usr/bin/monit start nginx" >> /var/log/le-renew.log
+    user: root
+  when: letsencrypt.enabled == true
